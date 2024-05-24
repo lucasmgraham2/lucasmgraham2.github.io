@@ -9,7 +9,7 @@ body {
     color: white;
     display: flex;
     align-items: center;
-/* Reduced padding to make the navbar height smaller */
+/* Reduced padding to make the navbar height smaler */
     position: fixed;
     width: 100%; /* determines the size of the bar. stuck to top, and all of width*/
     top: 0;
