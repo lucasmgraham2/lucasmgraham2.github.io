@@ -4,6 +4,60 @@ body {
     padding: 0;
 }
 
+.parallax-image{
+    background: url("/images/louisville.jpg");
+    min-height: 650px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.labels{
+    min-height: 75px;
+    min-width: 50px;
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    height:700px;
+
+    justify-content: center;
+
+}
+.pics1 {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+.pics1 .friends{
+    background: url("/images/louisville.jpg");
+    min-height: 300px;
+}
+.pics1 .cruorg{
+    background: url("/images/blue.jpg");
+    min-height: 100px;
+}
+
+/*about description in here*/
+
+.pics2{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+
+
+
+
+/*START NAVBAR*/
 .navbarcontainer {
     background-color: #636363;
     color: white;
@@ -19,7 +73,6 @@ body {
 .navbarcontainer ul { /* The list of nav items */
     list-style: none; /* Remove bullet points */
     margin: 0;
-    padding: 0;
     display: flex; /* Display list items in a row */
     padding-right: 30px;
 }
@@ -43,6 +96,8 @@ body {
     background-color: hsl(0,0%,10%);
     color: green;
 }
+/*END NAVBAR*/
+
 
 section {
     padding: 2em;
