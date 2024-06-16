@@ -138,13 +138,42 @@ body {
     min-height: 250px;
     border-radius: 30px;
 }
+/*END OF ABOUT ME SECTION*/
 
 
 /*EXPERIENCE SECTION*/
 .experience{
     min-height: 650px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+}
+.exp_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background-color: green;
+}
+.exp_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background-color: yellow;
+}
+.exp_image{
+    background-color: blue;
+    min-height: 200px;
+    max-width: 450px;
+}
+.exp_text{
+    background-color: red;
+    min-height: 200px;
+    max-width: 450px;
+}
+/*END EXP SECTION*/
 
 
 section {
