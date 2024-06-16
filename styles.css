@@ -2,60 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
+    
 }
-
-.parallax-image{
-    background: url("/images/louisville.jpg");
-    min-height: 650px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.labels{
-    min-height: 75px;
-    min-width: 50px;
-}
-
-.aboutme{
-    display: flex;
-    flex-direction: row;
-    height:700px;
-
-    justify-content: center;
-
-}
-.pics1 {
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-
-}
-.pics1 .friends{
-    background: url("/images/louisville.jpg");
-    min-height: 300px;
-}
-.pics1 .cruorg{
-    background: url("/images/blue.jpg");
-    min-height: 100px;
-}
-
-/*about description in here*/
-
-.pics2{
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 300px;
-}
-
-
-
-
 
 /*START NAVBAR*/
 .navbarcontainer {
@@ -97,6 +46,105 @@ body {
     color: green;
 }
 /*END NAVBAR*/
+
+
+/*front images*/
+
+.parallax-image{
+    background: url("/images/louisville.jpg");
+    min-height: 650px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*application row*/
+.labels{
+    min-height: 75px;
+    min-width: 50px;
+}
+
+/*ABOUT ME*/
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    height:700px;
+    justify-content: center;
+    
+}
+
+/*first column*/
+.pics1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 33%;
+    background-color: yellow;
+    padding-right: 5px;
+    padding-left: 10px;
+
+}
+.pics1 .friends{
+    background: url("/images/louisville.jpg");
+    min-height: 250px;
+    /*make rounded corners*/
+    border-radius: 30px;
+}
+.pics1 .crupic{
+    background: url("/images/blue.jpg");
+    min-height: 250px;
+    border-radius: 30px;
+}
+
+/*second column*/
+.aboutdescription{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.aboutdescription .profpic {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+/*third column*/
+.pics2{
+    padding-right: 10px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 33%;
+    background-color: green;
+}
+
+.pics2 .friends2{
+    background: url("/images/louisville.jpg");
+    min-height: 250px;
+    border-radius: 30px;
+
+}
+.pics2 .orgpic{
+    background: url("/images/blue.jpg");
+    min-height: 250px;
+    border-radius: 30px;
+}
+
+
+/*EXPERIENCE SECTION*/
+.experience{
+    min-height: 650px;
+}
+
 
 
 section {
