@@ -1,24 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+
+body{
+    margin: 40px;
     padding: 0;
-    background-color: white;
-    
+    height: 100%;
+    background-color: white; /* Fallback background color */
 }
+
+.frontpic {
+    background-image:  
+        url('images/fire.jpg'),
+        linear-gradient(135deg, #e68e8e, #e8966e, #dab255);
+    background-blend-mode: overlay; /* Blend the gradient with the image */
+    background-size: cover; /* Ensure the image covers the container */
+    max-width: 100%; /* Adjust width as needed */
+    min-height: 800px; /* Adjust height as needed */
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 90%);
+    background-position: bottom 100px;
+    opacity: 0.9;
+}
+
 
 /*START NAVBAR*/
 .navbarcontainer {
-    background-color: #636363;
     color: white;
     position: fixed; /*keeps the bar at the top of the page when scrolling*/
     width: 100%; /* determines the size of the bar. stuck to top, and all of width*/
     top: 0;
-    height: 3.5em; /* Explicitly set a smaller height for the navbar */
+    height: 5em; /* Explicitly set a smaller height for the navbar */
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Space items out */
     align-items: center; /* Center items vertically */
     padding: 0 20px; /* Add some padding to the left and right */
 }
+
 .navbarcontainer ul { /* The list of nav items */
     list-style: none; /* Remove bullet points */
     margin: 0;
@@ -47,142 +61,14 @@ body {
 }
 /*END NAVBAR*/
 
-
-/*front images*/
-
-.parallax-image{
-    background: url("/images/louisville.jpg");
-    min-height: 650px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-
-/*application row*/
 .labels{
-    min-height: 75px;
-    min-width: 50px;
+    min-height: 100px;
+    max-width: 100%;
 }
 
-/*ABOUT ME*/
-.aboutme{
-    display: flex;
-    flex-direction: row;
-    height:700px;
-    justify-content: center;
-    
-}
-
-/*first column*/
-.pics1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 33%;
-    background-color: yellow;
-    padding-right: 5px;
-    padding-left: 10px;
-
-}
-.pics1 .friends{
-    background: url("/images/louisville.jpg");
-    min-height: 250px;
-    /*make rounded corners*/
-    border-radius: 30px;
-}
-.pics1 .crupic{
-    background: url("/images/blue.jpg");
-    min-height: 250px;
-    border-radius: 30px;
-}
-
-/*second column*/
-.aboutdescription{
-    width: 34%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.aboutdescription .profpic {
-    background-color: black;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-
-}
-
-/*third column*/
-.pics2{
-    padding-right: 10px;
-    padding-left: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-width: 33%;
-    background-color: green;
-}
-
-.pics2 .friends2{
-    background: url("/images/louisville.jpg");
-    min-height: 250px;
-    border-radius: 30px;
-
-}
-.pics2 .orgpic{
-    background: url("/images/blue.jpg");
-    min-height: 250px;
-    border-radius: 30px;
-}
-/*END OF ABOUT ME SECTION*/
-
-
-/*EXPERIENCE SECTION*/
-.experience{
-    min-height: 650px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-.exp_left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    background-color: green;
-}
-.exp_right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    background-color: yellow;
-}
-.exp_image{
-    background-color: blue;
-    min-height: 200px;
-    max-width: 450px;
-}
-.exp_text{
-    background-color: red;
-    min-height: 200px;
-    max-width: 450px;
-}
-/*END EXP SECTION*/
-
-
-section {
-    padding: 2em;
-    max-width: 800px;
-    margin: 5em auto 0;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5em;
+.about{
+    min-height: 700px;
+    max-width: 100%;
+    background: linear-gradient(135deg, #da3d3d, #f16d2b, #cd9f32);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
