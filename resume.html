@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <nav>
-    <div class="navbarcontainer">
-        <h1 class="name">Luke Graham</h1>
-        <ul class="navlist">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>  
-    </div>
-</nav>
+    
 </head>
 <body>
+    <script src="navscroll.js"></script>
 
-    <div class="frontpic"></div>
+
+    <div class="navbar_container" id="nav">
+        <a class="navbar_name js-scroll-trigger" style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25px;" href="#name"><b>Luke Graham</b></a>
+        <ul class="nav_items">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#activities">Activities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/resume" target="blank"><b><i class="fa fa-file-pdf-o"></i> Resume</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    <div class="frontpic", id="name"></div>
 
     <div class="labels">
         <ul>
@@ -29,8 +45,28 @@
         </ul>
     </div>
 
-    <div class="about", id="about"></div>
+    <div class="about_container", id="about">
+        
+        <div class="prof_container">
+            <img src="images/blue.jpg", style="width:300px; height:300px; border-radius:50%; border:10px solid black;">
+            <div class="profdescription", style="max-width:400px; color:white; padding-top:10px;">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quos fuga 
+                    expedita et dolorum repellat, quo dicta. Exercitationem odit, harum voluptates perspiciatis, 
+                    cupiditate quisquam, fugit voluptate debitis dolore eos cumque.
+                </p>
+            </div>
+        </div>
+        <div class="pics_container">
+            <img src="images/louisville.jpg", style="width:400px; height:225px; border-radius:10px;">
+            <img src="images/blue.jpg", style="width:400px; height:225px; border-radius:10px;">
+        </div>    
+        
+    </div>
     
+    <div class="experience_container" id="experience">
+
+    </div>
 
     
 

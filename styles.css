@@ -1,9 +1,12 @@
 
 body{
-    margin: 40px;
+    margin: 2%;
     padding: 0;
     height: 100%;
     background-color: white; /* Fallback background color */
+}
+p {
+    font-size: 25px;
 }
 
 .frontpic {
@@ -12,52 +15,49 @@ body{
         linear-gradient(135deg, #e68e8e, #e8966e, #dab255);
     background-blend-mode: overlay; /* Blend the gradient with the image */
     background-size: cover; /* Ensure the image covers the container */
+    background-attachment: fixed;
     max-width: 100%; /* Adjust width as needed */
     min-height: 800px; /* Adjust height as needed */
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 90%);
-    background-position: bottom 100px;
+    background-position: bottom 5%;
     opacity: 0.9;
 }
 
 
 /*START NAVBAR*/
-.navbarcontainer {
+.navbar_container {
     color: white;
     position: fixed; /*keeps the bar at the top of the page when scrolling*/
     width: 100%; /* determines the size of the bar. stuck to top, and all of width*/
     top: 0;
-    height: 5em; /* Explicitly set a smaller height for the navbar */
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space items out */
+    display: flex;
+    justify-content: center;
     align-items: center; /* Center items vertically */
-    padding: 0 20px; /* Add some padding to the left and right */
+    z-index: 1;
+    transition: margin 0.2s;
 }
-
-.navbarcontainer ul { /* The list of nav items */
-    list-style: none; /* Remove bullet points */
-    margin: 0;
-    display: flex; /* Display list items in a row */
-    padding-right: 30px;
-}
-
-.navbarcontainer .name{ /* the text of the name in the navbar*/
-    font-size: 20px;
-    padding-left: 20px;
-}
-
-.navbarcontainer a { /* the actual text/link/size of the nav bar items */
+.navbar_name{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-bottom: 18px;
-    padding-left: 10px;
 }
-.navbarcontainer a:hover{
-    background-color: hsl(0,0%,10%);
-    color: green;
+.navbar_container ul{
+    display: flex;
+    font-size: 20px;
+    list-style-type: none;
+    padding-right: 6%;
+    padding-left: 20%;
+    transition: padding 0.3s;
+}
+.navbar_container li a { /* the actual text/link/size of the nav bar items */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 10px 20px 10px;
+}
+
+.navbar_container a:hover{
+    color: black;
 }
 /*END NAVBAR*/
 
@@ -66,9 +66,33 @@ body{
     max-width: 100%;
 }
 
-.about{
+/*ABOUT ME SECTION*/
+.about_container{
     min-height: 700px;
     max-width: 100%;
     background: linear-gradient(135deg, #da3d3d, #f16d2b, #cd9f32);
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    display: flex;
+    justify-content: center;
+
 }
+
+.prof_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-left: 300px;
+}
+
+.pics_container{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    width: 50%;
+}
+
+/*ABOUT ME END*/
