@@ -26,6 +26,7 @@ p {
 
 /*START NAVBAR*/
 .navbar_container {
+    margin: 2%;
     color: white;
     position: fixed; /*keeps the bar at the top of the page when scrolling*/
     width: 100%; /* determines the size of the bar. stuck to top, and all of width*/
@@ -96,3 +97,31 @@ p {
 }
 
 /*ABOUT ME END*/
+
+
+.experience_container{
+    min-height: 3200px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exp_left{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.exp_right{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#work{
+    background: linear-gradient(135deg, #da3d3d, #f16d2b, #cd9f32);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    min-height: 700px;
+    min-width: 70%;
+}

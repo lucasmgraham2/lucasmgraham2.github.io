@@ -5,6 +5,7 @@ function scrollFunction() {
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         nav.style.margin="0px";
         nav.style.backgroundColor="#4f4f4f";
+        nav.style.width="95.99%";
         nav_items.style.paddingLeft="4%";
         nav_items.style.paddingRight="0%";
         
