@@ -6,7 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    
+    <script src="https://kit.fontawesome.com/d79ead22ec.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <script src="navscroll.js"></script>
@@ -15,29 +15,29 @@
     <div class="navbar_container" id="nav">
         <a class="navbar_name" style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25px;" href="#name"><b>Luke Graham</b></a>
         <ul class="nav_items">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-
+            <li class="nav_item">
+                <a class="nav_link" href="#about">About</a>
+                <a class="nav_pic" href="#about"><i class="fas fa-user"></i></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-
+            <li class="nav_item">
+                <a class="nav_link" href="#experience">Experience</a>
+                <a class="nav_pic" href="#experience"><i class="fas fa-address-card"></i></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-
+            <li class="nav_item">
+                <a class="nav_link" href="#skills">Skills</a>
+                <a class="nav_pic" href="#skills"><i class="fas fa-book-reader"></i></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#activities">Activities</a>
-
+            <li class="nav_item">
+                <a class="nav_link" href="#activities">Activities</a>
+                <a class="nav_pic" href="#activities"><i class="fas fa-biking"></i></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacts</a>
-
+            <li class="nav_item">
+                <a class="nav_link" href="#contact">Contacts</a>
+                <a class="nav_pic" href="#contact"><i class="fas fa-phone"></i></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/resume" target="blank"><b><i class="fa fa-file-pdf-o"></i> Resume</b></a>
-
+            <li class="nav_item">
+                <a class="nav_link" href="/resume" target="blank">Resume</a>
+                <a class="nav_pic" href="/resume"><i class="fa fa-file-pdf-o"></i></a>
             </li>
           </ul>
         </div>
@@ -47,15 +47,19 @@
     <div class="frontpic", id="name"></div>
 
     <div class="labels">
-        <ul>
-            <li></li>
+        <ul class="label_list">
+            <li class="label_item"><img src="images/wvlogo.jpg"></li>
+            <li class="label_item"><img src="images/bcclogo.jpg"></li>
+            <li class="label_item"><img src="images/nsslogo.jpg"></li>
+            <li class="label_item"><img src="images/honorsllclogo.png"></li>
+            <li class="label_item"><img src="images/crulogo.png"></li>
         </ul>
     </div>
 
     <div class="about_container", id="about">
         
         <div class="prof_container">
-            <img src="images/blue.jpg", style="width:300px; height:300px; border-radius:50%; border:10px solid black;">
+            <img src="images/profpic.jpg", style="width:300px; height:300px; border-radius:50%; border:10px solid black;">
             <div class="profdescription", style="max-width:400px; color:white; padding-top:10px;">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quos fuga 
@@ -71,43 +75,48 @@
         
     </div>
     
-
+ 
     <div class="experience_container" id="experience">
-        <h1 style="display:flex; justify-content:center;">Work Timeline</h1>
-        <div id="list_container">
-          <ul id="work_list_right">
-            <li id="work_item">
+        <h1 style="display:flex; justify-content:center; color:white; padding-left:50px; font-size:40px;"><b>Work Timeline</b></h1>
+        <div class="list_container">
+          <ul class="work_list">
+            <li class="work_item item_1">
+              <img src="images/blue.jpg" class="work_pics"></img>
                 <h1>Idemia NSS</h1>
                 <h2>Automated Test Engineering Intern</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
                 </p>
               </li>
-            <li id="work_item">
-                <h1>Bible Center</h1>
-                <h2>Maintenance Worker</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-                </p>
-            </li>
-            <li id="work_item">
-                <h1>Bible Center</h1>
-                <h2>Maintenance Worker</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-                </p>
-            </li>
-
-          <ul id="work_list_left">
-            <li id="work_item_left">
+              <li class="work_item item_2">
+                <img src="images/research.jpg" class="work_pics"></img>
                 <h1>WVU Research Apprenticeship</h1>
                 <h2>Undergraduate Research Student</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
                 </p>
             </li>
-            <li id="work_item_left">
-                <h1>WVU Honors College</h1>
-                <h2>Test-Blind Essay Reviewer</h2>
+            <li class="work_item item_3">
+              <img src="images/blue.jpg" class="work_pics"></img>
+                <h1>Bible Center</h1>
+                <h2>Maintenance Worker</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
                 </p>
             </li>
+            <li class="work_item item_4">
+              <img src="images/blue.jpg" class="work_pics"></img>
+              <h1>WVU Honors College</h1>
+              <h2>Test-Blind Essay Reviewer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+              </p>
+          </li>
+            <li class="work_item item_5">
+              <img src="images/blue.jpg" class="work_pics"></img>
+                <h1>Bible Center</h1>
+                <h2>Maintenance Worker</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                </p>
+            </li>
+            <li class="item_6"></li>
+            
           </ul>
           
         </div>
