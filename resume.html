@@ -11,7 +11,7 @@
 <body>
     <script src="navscroll.js"></script>
 
-
+    <!--TODO make animation for the fade to be cleaner or look nicer-->
     <div class="navbar_container" id="nav">
         <a class="navbar_name" style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25px;" href="#name"><b>Luke Graham</b></a>
         <ul class="nav_items">
@@ -58,22 +58,20 @@
     </div>
 
     <div class="about_container", id="about">
-        
-        <div class="prof_container">
-            <img src="images/profpic.jpg", style="width:300px; height:300px; border-radius:10px; border:10px solid black;">
-            <div class="profdescription", style="max-width:400px; color:white; padding-top:10px;">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quos fuga 
-                    expedita et dolorum repellat, quo dicta. Exercitationem odit, harum voluptates perspiciatis, 
-                    cupiditate quisquam, fugit voluptate debitis dolore eos cumque.
-                </p>
-            </div>
-        </div>
-        <div class="pics_container">
-            <img src="images/louisville.jpg", style="width:400px; height:225px; border-radius:10px;">
-            <img src="images/blue.jpg", style="width:400px; height:225px; border-radius:10px;">
-        </div>    
-        
+        <ul class="about_list">
+          <li class="about_item aitem_1" style=" display:flex; justify-content:flex-end; align-items:center;"> <img src="images/profpic.jpg" style="width:350px; height:350px; border-radius:40px; border:10px solid black"></li>
+          <li class="about_item aitem_2" style=" display:flex; align-items:center;">
+            <p>
+              <b>Luke Graham</b> <br>
+              WVU '26, Double Major in Computer Science & Finance <br>
+              I'm a junior and my passion is serving my community and studying computer science. <br>
+              My interests include technical debt, software design and development, artificial intelligence, and machine learning.
+          </p>
+          <!-- TODO space these sections out accordingly to be legible-->
+          </li>
+          <li class="about_item aitem_3"><img src="images/louisville.jpg" style="width:600px; height:338px; border-radius:40px;"></li>
+          <li class="about_item aitem_4"><img src="images/blue.jpg" style="width:600px; height:338px; border-radius:40px;"></li>
+        </ul>
     </div>
     
     <div class="skills_container", id="skills">
@@ -112,42 +110,42 @@
         <h1 style="display:flex; justify-content:center; color:white; padding-left:50px; font-size:40px;"><b>Work Timeline</b></h1>
         <div class="list_container">
           <ul class="work_list">
-            <li class="work_item item_1">
+            <li class="work_item witem_1">
               <img src="images/blue.jpg" class="work_pics"></img>
                 <h1>Idemia NSS</h1>
                 <h2>Automated Test Engineering Intern</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
                 </p>
               </li>
-              <li class="work_item item_2">
+              <li class="work_item witem_2">
                 <img src="images/research.jpg" class="work_pics"></img>
                 <h1>WVU Research Apprenticeship</h1>
                 <h2>Undergraduate Research Student</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
                 </p>
             </li>
-            <li class="work_item item_3">
+            <li class="work_item witem_3">
               <img src="images/bccpic.jpg" class="work_pics"></img>
                 <h1>Bible Center</h1>
                 <h2>Maintenance Worker</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
                 </p>
             </li>
-            <li class="work_item item_4">
+            <li class="work_item witem_4">
               <img src="images/blue.jpg" class="work_pics"></img>
               <h1>WVU Honors College</h1>
               <h2>Test-Blind Essay Reviewer</h2>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
               </p>
           </li>
-            <li class="work_item item_5">
+            <li class="work_item witem_5">
               <img src="images/blue.jpg" class="work_pics"></img>
                 <h1>Bible Center</h1>
                 <h2>Maintenance Worker</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
                 </p>
             </li>
-            <li class="item_6"></li>
+            <li class="witem_6"></li>
             
           </ul>
           
