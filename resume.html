@@ -12,21 +12,22 @@
     <script src="navscroll.js"></script>
 
     <!--TODO make animation for the fade to be cleaner or look nicer-->
-    <div class="navbar_container" id="nav">
-        <a class="navbar_name" style="font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25px;" href="#name"><b>Luke Graham</b></a>
-        <ul class="nav_items">
+    <div class="navbar_container">
+          <span class="spacing"><a class="navbar_name" href="#name"><b>Luke Graham</b></a></span>
+          <ul class="nav_items">
             <li class="nav_item">
                 <a class="nav_link" href="#about">About</a>
                 <a class="nav_pic" href="#about"><i class="fas fa-user"></i></a>
             </li>
             <li class="nav_item">
+              <a class="nav_link" href="#skills">Skills</a>
+              <a class="nav_pic" href="#skills"><i class="fas fa-book-reader"></i></a>
+            </li>
+            <li class="nav_item">
                 <a class="nav_link" href="#experience">Experience</a>
                 <a class="nav_pic" href="#experience"><i class="fas fa-address-card"></i></a>
             </li>
-            <li class="nav_item">
-                <a class="nav_link" href="#skills">Skills</a>
-                <a class="nav_pic" href="#skills"><i class="fas fa-book-reader"></i></a>
-            </li>
+            
             <li class="nav_item">
                 <a class="nav_link" href="#activities">Activities</a>
                 <a class="nav_pic" href="#activities"><i class="fas fa-biking"></i></a>
@@ -40,7 +41,6 @@
                 <a class="nav_pic" href="/resume"><i class="fa fa-file-pdf-o"></i></a>
             </li>
           </ul>
-        </div>
       </div>
 
 
@@ -59,7 +59,20 @@
 
     <div class="about_container", id="about">
         <ul class="about_list">
-          <li class="about_item aitem_1" style=" display:flex; justify-content:flex-end; align-items:center;"> <img src="images/profpic.jpg" style="width:350px; height:350px; border-radius:40px; border:10px solid black"></li>
+          <li class="about_item aitem_1" style=" display:flex; justify-content:flex-end; align-items:center;"> 
+            <img src="images/profpic.jpg" style="width:350px; height:350px; border-radius:50%; border:10px solid white">
+            <ul class="socials">
+              <li class="social_icon about_item">
+                <a href="https://www.instagram.com/@luke_graham42" target="blank"><i class="fa fa-instagram icon"></i></a>
+              </li>
+              <li class="social_icon about_item">
+                <a href="https://www.linkedin.com/in/lmg42/" target="blank"><i class="fa fa-linkedin icon"></i></a>
+              </li>
+              <li class="social_icon about_item">
+                <a href="https://github.com/lucasmgraham2" target="blank"><i class="fa fa-github icon"></i></a>
+              </li>
+            </ul>
+          </li>
           <li class="about_item aitem_2" style=" display:flex; align-items:center;">
             <p>
               <b>Luke Graham</b> <br>
@@ -92,19 +105,19 @@
                 <p>Experience in web development, with knowledge of HTML, CSS, and JavaScript.</p>
             </li>
             <li class="skill_item sitem_4">
-                <img src="images/python.jpg" class="skill_pics">
-                <h1>SQL</h1>
+                <img src="images/javascript.png" class="skill_pics">
+                <h1>JavaScript</h1>
                 <p>Experience in SQL, with knowledge of database management and querying.</p>
             </li>
             <li class="skill_item sitem_5">
-                <img src="images/python.jpg" class="skill_pics">
+                <img src="images/git.jpg" class="skill_pics">
                 <h1>Git</h1>
-                <p>Experience in version control, with knowledge of Git and GitHub.</p>
+                <p>Experience in version control, with knowledge of GitHub and GitLab.</p>
             </li>
              <li class="skill_item sitem_6">
-                <img src="images/python.jpg" class="skill_pics">
+                <img src="images/bash.jpg" class="skill_pics">
                 <h1>Linux</h1>
-                <p>Experience in Linux, with knowledge of command-line interface and shell scripting.</p>
+                <p>Experience in Linux, with knowledge of the command-line interface, and Bash scripting.</p>
             </li>
             <li class="skill_item sitem_7">
                <img src="images/python.jpg" class="skill_pics">
@@ -117,9 +130,9 @@
                <p>Experience in Linux, with knowledge of command-line interface and shell scripting.</p>
            </li>
            <li class="skill_item sitem_9">
-               <img src="images/python.jpg" class="skill_pics">
-                <h1>Linux</h1>
-               <p>Experience in Linux, with knowledge of command-line interface and shell scripting.</p>
+               <img src="images/eggplant.png" class="skill_pics">
+                <h1>Eggplant</h1>
+               <p>Experience in Eggplant Functional, with knowledge of writing automated testing scripts.</p>
           </li>
         </ul>
     </div>

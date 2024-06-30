@@ -12,8 +12,7 @@ p {
 
 .frontpic {
     background-image:  
-        url('images/downtown.jpg'),
-        linear-gradient(135deg, #e68e8e, #e8966e, #dab255);
+        url('images/pcbpic.jpeg');
     background-blend-mode: overlay; /* Blend the gradient with the image */
     background-size: cover; /* Ensure the image covers the container */
     background-attachment: fixed;
@@ -21,7 +20,6 @@ p {
     min-height: 800px; /* Adjust height as needed */
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 90%);
     background-position: top;
-    opacity: 0.9;
 }
 
 
@@ -38,10 +36,27 @@ p {
     z-index: 1;
     transition: margin 0.2s;
 }
+.navbar_container span {
+    padding-right: 200px;
+    transition: padding-right 0.3s;
+}
+
+.nav_items {
+    background-color: #282828;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+    justify-content: center;
+}
 .navbar_name {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 40px;
+    transition: font-size 0.3s;
+    background-color: #282828;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
 }
 .navbar_container .nav_item a {
     color: white;
@@ -62,8 +77,6 @@ p {
     display: flex;
     font-size: 20px;
     list-style-type: none;
-    padding-right: 6%;
-    padding-left: 20%;
     transition: all 0.3s ease-out;
 }
 
@@ -110,7 +123,7 @@ p {
     height: 1000px;
     max-width: 100%;
     margin-top: 50px;
-    background: linear-gradient(135deg, #da3d3d, #f16d2b, #cd9f32);
+    background: linear-gradient(135deg, #b3b3b3, #b3b3b3);/*c03232*/
     clip-path: polygon(0 10.5%, 100% 0, 100% 90%, 0 100%);
     display: flex;
     justify-content: center;
@@ -118,7 +131,7 @@ p {
 }
 .about_list {
     display:grid;
-    grid-template-rows: 10% 38% 4% 38% 10%;
+    grid-template-rows: 15% 38% 4% 38% 10%;
     grid-template-columns: auto 600px 5% 600px auto;
 }
 .about_item {
@@ -127,6 +140,10 @@ p {
 .aitem_1 {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 .aitem_2 {
     grid-row: 2 / 3;
@@ -147,20 +164,49 @@ p {
     margin: 0;
     padding-bottom: 5px;
 }
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+.social_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: #282828;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+}
+.social_icon:hover {
+    background-color: black;
+}
+.icon {
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
 /*ABOUT ME END*/
 
 
 .skills_container {
     background-image:  
-    url('images/fire.jpg'),
-    linear-gradient(135deg, #e68e8e, #e8966e, #dab255);
+    url('images/louisville.jpg');
+    /*linear-gradient(135deg, #e68e8e, #e8966e, #dab255);*/
     background-blend-mode: overlay; /* Blend the gradient with the image */
     background-size: cover; /* Ensure the image covers the container */
     background-attachment: fixed;
     max-width: 100%; /* Adjust width as needed */
     max-height: 1000px; /* Adjust height as needed */
     clip-path: polygon(0 100%, 0 10%, 100% 0, 100% 100%);
-    background-position: bottom 5%;
+    background-position: top;
     opacity: 0.9;
     color: white;
     padding: 100px 0px 150px 0px;
@@ -186,6 +232,7 @@ p {
     row-gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 .skill_pics {
     max-width: 100%;

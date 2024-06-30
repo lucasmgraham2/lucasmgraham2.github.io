@@ -1,20 +1,21 @@
 window.onscroll = function() {scrollFunction()}
 function scrollFunction() {
+    const name = document.querySelector('.navbar_name');
     const nav = document.querySelector('.navbar_container');
-    const nav_items = document.querySelector('.nav_items');
+    const space = document.querySelector('.spacing');
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         nav.style.margin="0px";
-        nav.style.backgroundColor="#4f4f4f";
+        nav.style.backgroundColor="#282828";
+        nav.style.maxHeight="70px";
         nav.style.width="95.99%";
-        nav_items.style.paddingLeft="4%";
-        nav_items.style.paddingRight="0%";
-        
+        name.style.fontSize="1.5em";
+        space.style.paddingRight="10px";
     }
     else {
         nav.style.margin="2%";
         nav.style.backgroundColor="transparent";
-        nav_items.style.paddingLeft="20%";
-        nav_items.style.paddingRight="6%";
-
+        name.style.fontSize="40px";
+        nav.style.maxHeight="100px";
+        space.style.paddingRight="200px";
     }
 }
