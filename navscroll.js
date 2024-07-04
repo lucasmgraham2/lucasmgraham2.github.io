@@ -3,7 +3,7 @@ function scrollFunction() {
     const name = document.querySelector('.navbar_name');
     const nav = document.querySelector('.navbar_container');
     const space = document.querySelector('.spacing');
-    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         //nav container smaller and adds background color
         nav.style.margin="0px";
         nav.style.backgroundColor="#282828";

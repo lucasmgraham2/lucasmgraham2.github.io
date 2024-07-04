@@ -11,7 +11,9 @@
 <body>
     <script src="navscroll.js"></script>
 
+
     <!--TODO make animation for the fade to be cleaner or look nicer-->
+    <!-- Navigation Bar Section -->
     <div class="navbar_container">
           <span class="spacing"><a class="navbar_name" href="#name"><b>Luke Graham</b></a></span>
           <ul class="nav_items">
@@ -33,6 +35,10 @@
                 <a class="nav_pic" href="#activities"><i class="fas fa-biking"></i></a>
             </li>
             <li class="nav_item">
+              <a class="nav_link" href="#projects">Projects</a>
+              <a class="nav_pic" href="#projects"><i class="fa-solid fa-diagram-project fa-sm"></i></a>
+          </li>
+            <li class="nav_item">
                 <a class="nav_link" href="#contact">Contacts</a>
                 <a class="nav_pic" href="#contact"><i class="fas fa-phone"></i></a>
             </li>
@@ -44,8 +50,9 @@
       </div>
 
 
-    <div class="frontpic"></div>
+    <div class="frontpic" id="name"></div>
 
+    <!-- Company Logos -->
     <div class="labels">
         <ul class="label_list">
             <li class="label_item"><a href="https://www.wvu.edu/" target="_blank"><img src="images/wvlogo.jpg" style="padding-top: 90px;"></a></li>
@@ -57,7 +64,8 @@
         </ul>
     </div>
 
-    <div class="about_container", id="about">
+    <!-- About Me Section -->
+    <div class="about_container" id="about">
         <ul class="about_list">
           <li class="about_item aitem_1" style=" display:flex; justify-content:flex-end; align-items:center;"> 
             <img src="images/profpic.jpg" style="width:350px; height:350px; border-radius:50%; border:10px solid white">
@@ -85,15 +93,16 @@
         </ul>
         <h1 class="learn_more">Learn More About My: </h1>
         <ul class="link_tabs">
-          <li class="link_tab" href=""><a href="#skills"></a><h1>Skills</h1></li>
-          <li class="link_tab" href=""><a href="#experience"></a><h1>Experience</h1></li>
-          <li class="link_tab" ><a href="#activities"></a><h1>Activities</h1></li>
-          <li class="link_tab" ><a href="#contact"></a><h1>Contact</h1></li>
-          <li class="link_tab" ><a href="/resume"></a><h1>Resume</h1></li>
+          <li class="link_tab" href=""><a href="#skills"><h1>Skills</h1></a></li>
+          <li class="link_tab" href=""><a href="#experience"><h1>Experience</h1></a></li>
+          <li class="link_tab" ><a href="#activities"><h1>Activities</h1></a></li>
+          <li class="link_tab" ><a href="#contact"><h1>Contact</h1></a></li>
+          <li class="link_tab" ><a href="/resume"><h1>Resume</h1></a></li>
         </ul>
     </div>
     
-    <div class="skills_container", id="skills">
+    <!-- Skills Section -->
+    <div class="skills_container" id="skills">
         <h1 style="display:flex; justify-content:center; color:white; font-size:40px;"><b>Technical Skills</b></h1>
         <ul class="skills_list">
             <li class="skill_item sitem_1">
@@ -142,8 +151,8 @@
           </li>
         </ul>
     </div>
-
-    <div class="experience_container">
+    <!-- Work Experience Section -->
+    <div class="experience_container" id="experience">
         <h1 style="display:flex; justify-content:center; color:white; padding-left:50px; font-size:50px;"><b>Work Timeline</b></h1>
         <div class="list_container">
           <ul class="work_list">
@@ -218,9 +227,31 @@
         </div>
     </div>
 
-    <div class="activities_container">
+    <script src="horizontalscroll.js"></script>
 
+    <!-- Activities Section -->
+    <div class="activities_container sticky_parent" id="activities">
+      <div class="sticky" id="sticky">
+        <div class="scroll_section">
+          <ul class="cru act_item">
+            <li class="cru_1 text_item"><h1>pp</h1></li>
+            <li class="cru_2 text_item"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus delectus, autem dolores quisquam officia inventore aliquid nam esse, consequuntur dolorum, vel optio magni natus! Commodi officiis in tempore labore aliquid?</h1></li>
+            <li class="cru_3 pic_item"><img src="images/crulogo.jpg"></li>
+            <li class="cru_4 pic_item"><img src="images/crulogo.jpg"></li>
+            
+          </ul>
+          <ul class="psa act_item">
+            <h1>pp</h1>
+          </ul>
+          <ul class="christian_help act_item">
+            <h1>pp</h1>
+          </ul>
+        </div>
+      </div>
     </div>
-    
+
+
+    <!-- Projects Section -->
+    <div class="projects_container" id="projects"></div>
 </body>
 </html>
