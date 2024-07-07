@@ -233,10 +233,14 @@ p {
 
 .link_tabs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 0;
     padding: 0;
+    width: 800px;
+    height: 10%;
+    place-self:center;
 }
 .link_tab {
     color: white;
@@ -262,6 +266,12 @@ p {
 .link_tab:hover {
     background-color: black;
 }   
+.resume_tab {
+    background-color: cadetblue;
+}
+.resume_tab:hover {
+    background-color: rgb(62, 122, 124);
+}
 
 /*ABOUT ME END*/
 
