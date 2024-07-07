@@ -7,7 +7,7 @@ function scrollFunction() {
         //nav container smaller and adds background color
         nav.style.margin="0px";
         nav.style.backgroundColor="#282828";
-        nav.style.maxHeight="70px";
+        nav.style.maxHeight="59px";
         nav.style.width="95.99%";
 
         
