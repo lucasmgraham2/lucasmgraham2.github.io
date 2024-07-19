@@ -493,7 +493,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #b3b3b3;
+    background-color: #708090;
     font-family: "Source Sans Pro";
     color: black;
 }
@@ -506,7 +506,7 @@ p {
 
 .work_item {
     list-style-type: none;
-    background-color: #667;
+    background-color: #282828;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -833,5 +833,45 @@ p {
 
 .projects_container {
     height: 2000px;
-    background-color: blue;
+    background-color: #708090;
+}
+.project_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project_item {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+    margin-top: 180px;
+}
+.project_text {
+    padding: 10px 20px 20px 20px;
+    color: white;
+    margin: 0;
+}
+.project_text h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.project_text p {
+    font-size: 20px;
+}
+.project_pics {
+    width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
 }
