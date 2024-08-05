@@ -297,17 +297,16 @@ p {
     .nav_item a {
         padding: 0;
     }
-    .skills_list {
-        grid-template-rows: 420px 420px 420px 420px 420px;
-        grid-template-columns: 300px 300px;
-        column-gap: 50px;
-        row-gap: 20px;
-    }
     
 
 }
 @media screen and (max-width: 1470px){
     /* Work experience change to one column and centered */
+}
+@media screen and (min-width: 1044px){
+    .skills_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -353,7 +352,7 @@ p {
 .skills_list {
     display: grid;
     grid-template-rows: 420px 420px 420px;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
     column-gap: 50px;
     row-gap: 20px;
     justify-content: center;
