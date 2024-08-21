@@ -32,9 +32,8 @@ function scrollFunction() {
         //spacing between name and links is larger
         space.style.paddingRight="80px";
 
-        if(window.innerWidth < 1175) {
+        if(window.innerWidth < 1200) {
             name.style.fontSize="20px";
-            text_items.style.fontSize="16px";
             space.style.paddingRight="20px";
     }
 }

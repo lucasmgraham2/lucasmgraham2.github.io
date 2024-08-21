@@ -149,7 +149,7 @@ p {
 
 /*ABOUT ME SECTION*/
 .about_container {
-    height: 800px;
+    max-height: 8000px;
     max-width: 100%;
     background-color: #708090;/*b3b3b3 rosybrown D2B48C <-taupe 8B7E66 708090*/
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -240,7 +240,7 @@ p {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 100px 0;
     width: 800px;
     height: 10%;
     place-self:center;
@@ -280,34 +280,7 @@ p {
 
 
 
-@media screen and (max-width: 1175px) {
-    .navbar_container {
-        margin: 0;
-    }
-    .navbar_container span {
-        padding-right: 20px;
-    }
-    .nav_link  {
-        font-size: 17px;
-        padding: 10px 5px 10px 5px;
-    }
-    .navbar_name {
-        font-size: 20px;
-    }
-    .nav_item a {
-        padding: 0;
-    }
-    
 
-}
-@media screen and (max-width: 1470px){
-    /* Work experience change to one column and centered */
-}
-@media screen and (min-width: 1044px){
-    .skills_list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
 
 
@@ -333,9 +306,9 @@ p {
 .skills_container {
     background-color: cadetblue;
     max-width: 100%; /* Adjust width as needed */
-    max-height: 1480px; /* Adjust height as needed */
+    max-height: 4500px; /* Adjust height as needed */
     color: white;
-    padding: 10px 0px 150px 0px;
+    padding: 10px 0px 50px 0px;
     margin-bottom: 150px;
 }
 .skill_item {
@@ -352,13 +325,15 @@ p {
 .skills_list {
     display: grid;
     grid-template-rows: 420px 420px 420px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+    grid-template-columns: 300px 300px 300px;
     column-gap: 50px;
     row-gap: 20px;
     justify-content: center;
     align-items: center;
     padding: 0;
 }
+
+
 .skill_pics {
     max-width: 100%;
     max-height: 100px;
@@ -514,9 +489,10 @@ p {
 }
 
 .work_list {
+    padding: 0;
     display:grid;
     grid-template-rows: 500px 500px 500px 500px 500px;
-    grid-template-columns: auto 600px 5% 5% 600px auto;
+    grid-template-columns: 5% 40% 5% 5% 40% 5%;
 }
 
 .work_item {
@@ -671,6 +647,30 @@ p {
 
 
 
+@media screen and (max-width: 1200px) {
+    .navbar_container {
+        margin: 0;
+    }
+    .navbar_container span {
+        padding-right: 20px;
+    }
+    .nav_link  {
+        font-size: 17px;
+        padding: 10px 5px 10px 5px;
+    }
+    .navbar_name {
+        font-size: 20px;
+    }
+    .nav_item a {
+        padding: 0;
+    }
+    .about_list {
+        flex-direction: column;
+    }
+    .skills_list {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+    }
+}
 
 
 
@@ -723,7 +723,7 @@ p {
     background-color: cadetblue;
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 30% 30% 30%;
     row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
@@ -734,7 +734,7 @@ p {
     background-color: rosybrown;
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 30% 30% 30%;
     row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
@@ -745,7 +745,7 @@ p {
     background-color: lightcoral;
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 30% 30% 30%;
     row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
@@ -789,7 +789,7 @@ p {
     grid-column: span 3;
 }
 .org_item {
-    min-width:300px;
+    max-width:100%;
     min-height:100px;
 }
 
@@ -847,8 +847,9 @@ p {
 
 
 .projects_container {
-    height: 2000px;
+    max-height: 4000px;
     background-color: #708090;
+    padding: 0 0 50px 0;
 }
 .project_list {
     display: flex;
@@ -866,7 +867,8 @@ p {
     padding: 0;
     background-color: #282828;
     border-radius: 20px;
-    width: 600px;
+    min-width: 400px;
+    max-width: 50%;
     height: 400px;
     margin-top: 180px;
 }
@@ -884,9 +886,57 @@ p {
     font-size: 20px;
 }
 .project_pics {
-    width: 500px;
+    min-width: 200px;
+    max-width: 90%;
     max-height: 300px;
     object-fit: cover;
     object-position: top;
     border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+/* CONTACT ME SECTION */
+
+.contacts_container {
+    background-color: white;
+    margin-top: 100px;
+    max-height: 1000px;
+    background-color: #8c8c8c;
+}
+.contact_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+.contact_item {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    max-width: 50%;
+}
+.contact_text {
+    padding: 10px 20px 20px 20px;
+    color: white;
+    margin: 0;
+}
+.contact_item h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.contact_item i {
+    padding-right: 10px;
+    font-size: 20px;
 }
