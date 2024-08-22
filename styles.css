@@ -301,7 +301,7 @@ p {
 
 
 
-
+/* SKILLS SECTION */
 
 .skills_container {
     background-color: cadetblue;
@@ -435,14 +435,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0 0 0;
     padding: 0;
     place-self:center;
     list-style-type: none;
 }
 .more_skills_list img {
-    width: 75px;
-    height: 75px;
+    max-width: 75px;
+    max-height: 75px;
 }
 .more_skill_item {
     display: flex;
@@ -450,13 +449,24 @@ p {
     align-items: center;
     flex-direction: column;
     margin: 0 10px 0 10px;
-    padding: 0;
+    padding: 5px 5px 5px 5px;
     background-color: white;
+
     width: 120px;
     height: 120px;
     border: 5px solid black;
     border-radius: 50%;
 
+}
+.more_skills_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 20px;
+    width: 100%;
 }
 
 
@@ -493,6 +503,7 @@ p {
     display:grid;
     grid-template-rows: 500px 500px 500px 500px 500px;
     grid-template-columns: 5% 40% 5% 5% 40% 5%;
+    row-gap: 200px;
 }
 
 .work_item {
@@ -543,6 +554,26 @@ p {
     grid-row: 1 / 6;
     grid-column: 4 / 5;
     border-left: solid 5px white;
+}
+.wdate_1 {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+.wdate_2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.wdate_3 {
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+}
+.wdate_4 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+.wdate_5 {
+    grid-row: 5 / 6;
+    grid-column: 5 / 6;
 }
 
 .work_item h2 {
@@ -623,54 +654,7 @@ p {
     font-size: 20px;
 }
 
-.wdate_1 {
-    grid-row: 1 / 2;
-    grid-column: 5 / 6;
-}
-.wdate_2 {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-}
-.wdate_3 {
-    grid-row: 3 / 4;
-    grid-column: 5 / 6;
-}
-.wdate_4 {
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
-}
-.wdate_5 {
-    grid-row: 5 / 6;
-    grid-column: 5 / 6;
-}
 
-
-
-
-@media screen and (max-width: 1200px) {
-    .navbar_container {
-        margin: 0;
-    }
-    .navbar_container span {
-        padding-right: 20px;
-    }
-    .nav_link  {
-        font-size: 17px;
-        padding: 10px 5px 10px 5px;
-    }
-    .navbar_name {
-        font-size: 20px;
-    }
-    .nav_item a {
-        padding: 0;
-    }
-    .about_list {
-        flex-direction: column;
-    }
-    .skills_list {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
-    }
-}
 
 
 
@@ -863,11 +847,11 @@ p {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    margin: 0;
+    margin: 0 42px 0 0;
     padding: 0;
     background-color: #282828;
     border-radius: 20px;
-    min-width: 400px;
+    min-width: 310px;
     max-width: 50%;
     height: 400px;
     margin-top: 180px;
@@ -881,6 +865,7 @@ p {
     text-align: center;
     padding: 0;
     margin: 0;
+    font-size: 25px;
 }
 .project_text p {
     font-size: 20px;
@@ -919,24 +904,105 @@ p {
 .contact_item {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
     color: white;
     max-width: 50%;
 }
-.contact_text {
-    padding: 10px 20px 20px 20px;
-    color: white;
-    margin: 0;
-}
 .contact_item h1 {
-    text-align: center;
     padding: 0;
     margin: 0;
+    font-size: 22px;
 }
 .contact_item i {
     padding-right: 10px;
     font-size: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .navbar_container {
+        margin: 0;
+    }
+    .navbar_container span {
+        padding-right: 20px;
+    }
+    .nav_link  {
+        font-size: 17px;
+        padding: 10px 5px 10px 5px;
+    }
+    .navbar_name {
+        font-size: 20px;
+    }
+    .nav_item a {
+        padding: 0;
+    }
+    .about_list {
+        flex-direction: column;
+    }
+    .skills_list {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+    }
+    .work_item p {
+        font-size: 18px;
+    }
+    .work_item h2 {
+        font-size: 20px;
+    }
+    .work_item h1 {
+        font-size: 25px;
+    }
+
+    
+
+
+
+
+
+
+    /* TODO: WORK EXPERIENCE to ONE column */
+}
+@media screen and (max-width: 942px) { /* needs to go to 320px */
+    /* TODO: ORGS CHANGE FORMAT */
+    /* TODO: NAVBAR SHRINK */
+    /* TODO: DOUBLE CHECK PROJECTS */
+    .witem_2 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+    .witem_4 {
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+    }
+    .wdate_2 {
+        grid-row: 2 / 3;
+        grid-column: 5 / 6;
+    }
+    .wdate_4 {
+        grid-row: 4 / 5;
+        grid-column: 5 / 6;
+    }
+    .work_list {
+        grid-template-columns: 2% minmax(200px, 96%) 2%;
+        row-gap: 200px;
+    }
+    .wdate_1, .wdate_2, .wdate_3, .wdate_4, .wdate_5, .witem_6, .witem_7, .wb1, .wb2, .wb3, .wb4, .wb5 {
+        display: none;
+    }
+    .pitem_2 {
+        margin-top: 350px;
+    }
+}
+/* TODO: CHANGE TO GOOD LOOKING COLORS */
+/* TODO: MAKE DIAGONAL IN ABOUT RESPONSIVE TO CHANGE */
+/* TODO:  */
+@media screen and (max-width: 677px) { /* needs to go to 320px */
+    .more_skills_container {
+        flex-direction: column;
+    }
 }
