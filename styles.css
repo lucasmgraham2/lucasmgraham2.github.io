@@ -115,7 +115,7 @@ p {
 }
 /*END NAVBAR*/
 
-
+/* TODO: Fix why "About" changes font size */
 
 
 
@@ -369,39 +369,7 @@ p {
 .double_skill {
     height: 75px;
 }
-.sitem_1 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_2 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_4 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_5 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_6 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_7 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_8 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.sitem_9 {
+.sitem_1, .sitem_2, .sitem_3, .sitem_4, .sitem_5, .sitem_6, .sitem_7, .sitem_8, .sitem_9 {
     grid-row: span 1;
     grid-column: span 1;
 }
@@ -592,12 +560,18 @@ p {
     padding: 0px 10px 30px 10px;
 }
 .work_item h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
     text-align: center;
     margin: 0;
     padding: 5px;
+}
+.work_item h3 {
+    display: none;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
 /*Work text items below*/
@@ -665,7 +639,7 @@ p {
 
 
 
-
+/* TODO: Finish explanations and reorder workplace and job title */
 
 
 .organizations_container {
@@ -682,7 +656,6 @@ p {
     position: sticky;
     top: 0;
     height: 100vh;
-    border: 1px solid black;
 }
 .scroll_section {
     position: absolute;
@@ -737,41 +710,18 @@ p {
 }
 
 /* PATTERNED STRUCTURE */
-.org_1 {
+.org_1, .org_2, .org_3, .org_4, .org_5, .org_6 {
     grid-row: span 1;
     grid-column: span 1;
 }
-.org_2 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.org_3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.org_4 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.org_5 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.org_6 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.org_7 {
+.org_7, .org_8 {
     grid-row: span 1;
     grid-column: span 3;
     /* IF WANT BACKGROUND COLOR
     background-color: #282828;
     border-radius: 30px; */
 }
-.org_8 {
-    grid-row: span 1;
-    grid-column: span 3;
-}
+
 .org_item {
     max-width:100%;
     min-height:100px;
@@ -813,6 +763,14 @@ p {
     margin: 0;
     padding: 0;
 }
+.orgall_item h3 {
+    font-size: 30px;
+    padding-top: 30px;
+}
+.orgall_item p {
+    min-width: 90%;
+    max-width: 900px;
+}
 /* TODO: maybe add buttons that go side to side through the orgs */
 
 
@@ -827,7 +785,7 @@ p {
 
 
 
-
+/* TODO: Edit actual projects and only list the best ones */
 
 
 .projects_container {
@@ -963,14 +921,10 @@ p {
 
 
 
-
-
-    /* TODO: WORK EXPERIENCE to ONE column */
 }
 @media screen and (max-width: 942px) { /* needs to go to 320px */
     /* TODO: ORGS CHANGE FORMAT */
     /* TODO: NAVBAR SHRINK */
-    /* TODO: DOUBLE CHECK PROJECTS */
     .witem_2 {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
@@ -988,7 +942,7 @@ p {
         grid-column: 5 / 6;
     }
     .work_list {
-        grid-template-columns: 2% minmax(200px, 96%) 2%;
+        grid-template-columns: 2% minmax(280px, 96%) 2%;
         row-gap: 200px;
     }
     .wdate_1, .wdate_2, .wdate_3, .wdate_4, .wdate_5, .witem_6, .witem_7, .wb1, .wb2, .wb3, .wb4, .wb5 {
@@ -996,6 +950,31 @@ p {
     }
     .pitem_2 {
         margin-top: 350px;
+    }
+    .org_6, .org_1, .org_2, .org_3, .org_4, .org_5 {
+        display: none;
+    }
+    .cru, .psa, .christian_help {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 70px 0;
+        margin-top: 150px;
+    }
+    .work_item h3 {
+        display: flex;
+    }
+    .work_item p {
+        font-size: 15px;
+    }
+    .witem_2 img {
+        object-position: 0px -150px;
+    }
+
+}
+@media screen and (max-width: 775px) {
+    .witem_2 img {
+        object-position: 50%;
     }
 }
 /* TODO: CHANGE TO GOOD LOOKING COLORS */
