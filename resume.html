@@ -7,47 +7,50 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/d79ead22ec.js" crossorigin="anonymous"></script>
-    
+  
 </head>
 <body>
    <script src="navscroll.js"></script>
-
+   <script src="navresponsive.js"></script>
 
     <!--TODO make animation for the fade to be cleaner or look nicer-->
     <!-- Navigation Bar Section -->
     <div class="navbar_container">
           <span class="spacing"><a class="navbar_name" href="#name"><b>Luke Graham</b></a></span>
-          <ul class="nav_items">
-            <li class="nav_item">
-              <a class="nav_link" href="#about">About</a>
-              <a class="nav_pic" href="#about"><i class="fas fa-user"></i></a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#skills">Skills</a>
-              <a class="nav_pic" href="#skills"><i class="fas fa-book-reader"></i></a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#experience">Experience</a>
-              <a class="nav_pic" href="#experience"><i class="fas fa-address-card"></i></a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#involvement">Involvement</a>
-              <a class="nav_pic" href="#involvement"><i class="fas fa-people-group"></i></a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#projects">Projects</a>
-              <a class="nav_pic" href="#projects"><i class="fa-solid fa-diagram-project fa-sm"></i></a>
-          </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#contact">Contacts</a>
-              <a class="nav_pic" href="#contact"><i class="fas fa-message"></i></a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="/resume" target="blank">Resume</a>
-              <a class="nav_pic" href="/resume"><i class="fa fa-file-pdf-o"></i></a>
-            </li>
-          </ul>
-      </div>
+          <button class="dropdown_btn"><i class="fas fa-bars"></i></button>
+          <div class="dropdown">
+            <ul class="nav_items">
+              <li class="nav_item">
+                <a class="nav_link" href="#about">About</a>
+                <a class="nav_pic" href="#about"><i class="fas fa-user"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#skills">Skills</a>
+                <a class="nav_pic" href="#skills"><i class="fas fa-book-reader"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#experience">Experience</a>
+                <a class="nav_pic" href="#experience"><i class="fas fa-address-card"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#involvement">Involvement</a>
+                <a class="nav_pic" href="#involvement"><i class="fas fa-people-group"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#projects">Projects</a>
+                <a class="nav_pic" href="#projects"><i class="fa-solid fa-diagram-project fa-sm"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#contact">Contacts</a>
+                <a class="nav_pic" href="#contact"><i class="fas fa-message"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="/resume" target="blank">Resume</a>
+                <a class="nav_pic" href="/resume"><i class="fa fa-file-pdf-o"></i></a>
+              </li>
+            </ul>
+          </div>
+    </div>
 
 
     <div class="frontpic" id="name"></div>

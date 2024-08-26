@@ -1,20 +1,38 @@
+
+
 window.onscroll = function() {scrollFunction()}
 function scrollFunction() {
     const name = document.querySelector('.navbar_name');
     const nav = document.querySelector('.navbar_container');
     const space = document.querySelector('.spacing');
     const text_items = document.querySelector('.nav_link');
-    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        //nav container smaller and adds background color
+    const nav_items = document.querySelector('.nav_items');
+    const dropdown = document.querySelector('.dropdown');
+    if(window.innerWidth < 900) {
         nav.style.margin="0px";
         nav.style.backgroundColor="#282828";
-        nav.style.maxHeight="59px";
+        nav.style.maxHeight="60px";
         nav.style.width="95.99%";
         name.style.fontSize="1.5em";
 
         //spacing between name and links is smaller
         space.style.paddingRight="10px";
-        if(window.innerWidth < 1175) {
+        name.style.fontSize="20px";
+        text_items.style.fontSize="18px";
+
+        return;
+    }
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        //nav container smaller and adds background color
+        nav.style.margin="0px";
+        nav.style.backgroundColor="#282828";
+        nav.style.maxHeight="60px";
+        nav.style.width="95.99%";
+        name.style.fontSize="1.5em";
+
+        //spacing between name and links is smaller
+        space.style.paddingRight="10px";
+        if(window.innerWidth < 1200) {
             name.style.fontSize="20px";
             text_items.style.fontSize="18px";
         }
@@ -31,11 +49,10 @@ function scrollFunction() {
        
         //spacing between name and links is larger
         space.style.paddingRight="80px";
-
         if(window.innerWidth < 1200) {
             name.style.fontSize="20px";
             space.style.paddingRight="20px";
+        }
     }
-}
 }
 
