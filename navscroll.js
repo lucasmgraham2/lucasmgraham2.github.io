@@ -1,5 +1,3 @@
-
-
 window.onscroll = function() {scrollFunction()}
 function scrollFunction() {
     if(window.innerWidth > 900) {

@@ -15,7 +15,7 @@ p {
 
 .frontpic {
     background-image:  
-        url('images/pcbpic2.jpeg');
+        url('images/pcbpic.jpeg');
     background-blend-mode: overlay; /* Blend the gradient with the image */
     background-size: cover; /* Ensure the image covers the container */
     background-attachment: fixed;
@@ -288,10 +288,10 @@ p {
     background-color: black;
 }   
 .resume_tab {
-    background-color: cadetblue;
+    background-color: #1e9ba1;
 }
 .resume_tab:hover {
-    background-color: rgb(62, 122, 124);
+    background-color: #156c71;
 }
 
 /*ABOUT ME END*/
@@ -322,7 +322,7 @@ p {
 /* SKILLS SECTION */
 
 .skills_container {
-    background-color: cadetblue;
+    background-color: #5b8585;
     max-width: 100%; /* Adjust width as needed */
     max-height: 4500px; /* Adjust height as needed */
     color: white;
@@ -380,7 +380,7 @@ p {
 
 }
 .project_links:hover {
-    color: rosybrown;
+    color: #27c9d1;
 }
 
 
@@ -695,7 +695,7 @@ p {
 
 
 .cru {
-    background-color: cadetblue;
+    background-color: #5b8585;
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
     grid-template-columns: 30% 30% 30%;
@@ -717,7 +717,7 @@ p {
 
 }
 .christian_help {
-    background-color: lightcoral;
+    background-color: #708090;
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
     grid-template-columns: 30% 30% 30%;
@@ -808,7 +808,7 @@ p {
 
 .projects_container {
     max-height: 4000px;
-    background-color: #708090;
+    background-color: #5b8585;
     padding: 0 0 50px 0;
 }
 .project_list {
@@ -988,6 +988,12 @@ p {
         object-position: 0px -150px;
     }
 }
+@media screen and (min-width: 900px) {
+    .dropdown {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .dropdown_btn {
         display: flex;
@@ -1003,9 +1009,10 @@ p {
         justify-content: center;
         flex-direction: column;
         position: absolute;
-        width: 50%;
+        width: 150px;
         right: 0px;
         z-index: 1;
+        padding: 20px 0 0 0;
     }
     .nav_pic {
         display: none;
@@ -1017,9 +1024,10 @@ p {
         margin: 0;
         width: 95.99%;
     }
-    .nav_item {
-        padding: 20px 10px 20px 10px;
+    .nav_link, .nav_item {
         text-align: center;
+        width: 150px;
+        height: 60px;
     }
     .navbar_name {
         font-size: 20px;
@@ -1027,9 +1035,12 @@ p {
     .nav_link {
         font-size: 18px;
     }
+    .nav_item {
+        cursor: pointer;
+    }
     .navbar_container .nav_item:hover .nav_link {
         opacity: 1;
-        color: #888;
+        color: #1e9ba1;
     }
     .aitem_2 {
         max-width: 600px;
@@ -1076,5 +1087,8 @@ p {
         height: 275px;
         padding: 0;
         margin: 0;
+    }
+    .frontpic {
+
     }
 }
