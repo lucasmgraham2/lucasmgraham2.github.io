@@ -18,10 +18,7 @@ function scrollFunction() {
 
             //spacing between name and links is smaller
             space.style.paddingRight="10px";
-            if(window.innerWidth < 1200) {
-                name.style.fontSize="20px";
-                text_items.style.fontSize="18px";
-            }
+
             
         }
         else {
@@ -30,13 +27,11 @@ function scrollFunction() {
             nav.style.backgroundColor="transparent";
             nav.style.height="100px";
 
-
             name.style.fontSize="40px";
         
             //spacing between name and links is larger
             space.style.paddingRight="80px";
             if(window.innerWidth < 1200) {
-                name.style.fontSize="20px";
                 space.style.paddingRight="20px";
             }
         }

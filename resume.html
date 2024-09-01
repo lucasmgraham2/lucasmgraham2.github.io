@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/d79ead22ec.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
 </head>
 <body>
+
+  <!-- JavaScript -->
   <script src="navscroll.js"></script>
   <script src="navresponsive.js"></script>
+  <script src="horizontalscroll.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
     <!--TODO make animation for the fade to be cleaner or look nicer-->
     <!-- Navigation Bar Section -->
@@ -42,7 +50,7 @@
                 <a class="nav_pic" href="#projects"><i class="fa-solid fa-diagram-project fa-sm"></i></a>
               </li>
               <li class="nav_item">
-                <a class="nav_link" href="#contact">Contacts</a>
+                <a class="nav_link" href="#contact">Contact Me</a>
                 <a class="nav_pic" href="#contact"><i class="fas fa-message"></i></a>
               </li>
               <li class="nav_item">
@@ -52,9 +60,6 @@
             </ul>
           </div>
     </div>
-  
-
-
     <div class="frontpic" id="name"></div>
 
     <!-- Company Logos -->
@@ -76,7 +81,7 @@
             <img src="images/profpic.jpg" class="about_pic">
             <ul class="socials">
               <li class="social_icon about_item">
-                <a href="https://www.instagram.com/@luke_graham42" target="blank"><i class="fa fa-instagram icon"></i></a>
+                <a href="https://www.instagram.com/luke_graham42" target="blank"><i class="fa fa-instagram icon"></i></a>
               </li>
               <li class="social_icon about_item">
                 <a href="https://www.linkedin.com/in/lmg42/" target="blank"><i class="fa fa-linkedin icon"></i></a>
@@ -89,10 +94,10 @@
           <li class="about_item aitem_2">
             <ul class="aitem_2">
               <li><h1 style="margin-bottom:7px; color:white;"><b>Luke Graham</b></h1></li>
-              <li><p><b>WVU '26, Double Major in Computer Science & Finance</b></p></li>
-              <li><p>I'm a Junior and my passions are serving my community, learning new things, and studying Computer Science. </p></li>
+              <li><p><b>B.S. Computer Science & B.S.B.A. Finance @ WVU '26</b></p></li>
+              <li><p>I'm a Junior and my passions are serving my community, learning new things, and exploring creative opportunities. </p></li>
               <li><p>My interests include software design and development, technical debt, artificial intelligence, and machine learning.</p></li>
-              <li><p>West Virginia University(WVU)</p></li>
+              <li><p>West Virginia University Honors/Leadership</p></li>
               <li style="margin-top: -10px;"><ul class="wvu_items">
                 <li><p>Foundation Scholar</p></li>
                 <li><p>Presidential Student Ambassador</p></li>
@@ -105,7 +110,7 @@
 
         <!-- LINK TABS -->
         <h1 class="learn_more">Learn More About My: </h1>
-        <ul class="link_tabs">
+        <ul class="link_tabs" data-aos="fade-up">
           <li class="link_tab"><a href="#skills"><h1>Skills</h1></a></li>
           <li class="link_tab"><a href="#experience"><h1>Experience</h1></a></li>
           <li class="link_tab"><a href="#involvement"><h1>Involvement</h1></a></li>
@@ -114,14 +119,13 @@
           <li class="link_tab resume_tab"><a href="/resume" target="_blank"><h1><i class="fa fa-file-pdf-o fa-xs"></i> Resume</h1></a></li>
         </ul>
     </div>
-    
     <div class="divider"></div>
 
     <!-- Skills Section -->
     <div class="skills_container" id="skills">
         <h1 style="display:flex; justify-content:center; color:white; font-size:40px;"><b>Technical Skills</b></h1>
         <ul class="skills_list">
-            <li class="skill_item sitem_1">
+            <li class="skill_item sitem_1" data-aos="zoom-in">
               <span><img src="images/python.png" class="skill_pics"></span>
               <div class="skill_text">
                 <h1>Python</h1>
@@ -131,7 +135,7 @@
                 </p>
               </div>
              </li>
-             <li class="skill_item sitem_2">
+             <li class="skill_item sitem_2" data-aos="zoom-in">
                 <span><img src="images/java.png" class="skill_pics"></span>
                 <div class="skill_text">
                   <h1>Java</h1>
@@ -141,16 +145,16 @@
                   </p>  
                 </div>            
             </li>
-            <li class="skill_item sitem_3">
+            <li class="skill_item sitem_3" data-aos="zoom-in">
                 <span><img src="images/javascript.png" class="skill_pics double_skill"></span>
                 <div class="skill_text">
                   <h1>JavaScript/TypeScript</h1>
-                  <p>Experience in full-stack development, with knowledge of front-end React.js
-                    and back-end Node.js. Used in my <a href="#webapp" class="project_links"><b>MoveTo webapp</b></a>.
+                  <p>Experience with front-end React.js
+                    and back-end Node.js. Used in my <a href="#webapp" class="project_links"><b>ForecastFella webapp</b></a>.
                     Knowledge of type safety and code refactoring.</p>
               </div> 
             </li>
-            <li class="skill_item sitem_4">
+            <li class="skill_item sitem_4" data-aos="zoom-in">
               <span><img src="images/c.jpg" class="skill_pics"></span>
               <div class="skill_text">
                <h1>C</h1>
@@ -159,34 +163,33 @@
                </p>
               </div> 
             </li>
-            <li class="skill_item sitem_5">
+            <li class="skill_item sitem_5" data-aos="zoom-in">
               <span><img src="images/htmlcss.jpg" class="skill_pics double_skill"></span>
               <div class="skill_text">
                 <h1>HTML/CSS</h1>
                 <p>Experience in web development, and multiple front-end projects. Used in this 
-                  <a href="#website" class="project_links"><b>Personal Website</b></a> and my
-                  <a href="#webapp" class="project_links"><b>MoveTo webapp</b></a>. Knowledge
+                  <a href="#website" class="project_links"><b>Personal Website</b></a> and the 
+                  <a href="#webapp" class="project_links"><b>ForecastFella webapp</b></a>. Knowledge
                   of frameworks like Bootstrap and Tailwind CSS. 
                 </p>
               </div> 
             </li>
-             <li class="skill_item sitem_6">
+             <li class="skill_item sitem_6" data-aos="zoom-in">
                 <span><img src="images/bash.jpg" class="skill_pics"></span>
                 <div class="skill_text">
                   <h1>Linux</h1>
                   <p>Experience writing Bash scripts and navigating the command-line interface.
-
                   </p>
               </div> 
             </li>
-            <li class="skill_item sitem_7">
+            <li class="skill_item sitem_7" data-aos="zoom-in">
               <span><img src="images/git.jpg" class="skill_pics"></span>
               <div class="skill_text">
                 <h1>Git</h1>
                 <p>Extensive experience with version control and use of GitHub, GitLab, and GitBash at work and at school.</p>
               </div> 
             </li>
-            <li class="skill_item sitem_8">
+            <li class="skill_item sitem_8" data-aos="zoom-in">
                <span><img src="images/csharp.png" class="skill_pics"></span>
                <div class="skill_text">
                 <h1>C#</h1>
@@ -195,7 +198,7 @@
                 </p>
               </div> 
            </li>
-           <li class="skill_item sitem_9">
+           <li class="skill_item sitem_9" data-aos="zoom-in">
                <span><img src="images/eggplant.png" class="skill_pics"></span>
                <div class="skill_text">
                 <h1>Eggplant</h1>
@@ -204,7 +207,7 @@
               </div> 
           </li>
         </ul>
-        <div class="more_skills_container">
+        <div class="more_skills_container" data-aos="zoom-in">
           <ul class="more_skills_list">
             <li class="more_skill_item"><img src="images/rust.png"></li>
             <li class="more_skill_item"><img src="images/lua.png"></li>
@@ -214,9 +217,8 @@
             <li class="more_skill_item"><img src="images/scheme.png" style="padding: 5px 0 0 5px;"></li>
           </ul>
         </div>
-        
-
     </div>
+
     <!-- Work Experience Section -->
     <div class="experience_container" id="experience">
         <h1 style="display:flex; justify-content:center; color:white; padding:0 0 50px 0; font-size:45px;"><b>Work Timeline</b></h1>
@@ -224,7 +226,7 @@
           <ul class="work_list">
 
             <!--List items for each work experience-->
-            <li class="work_item witem_1">
+            <li class="work_item witem_1" data-aos="fade-right" data-aos="200" data-aos="ease-in-sine">
               <img src="images/idemia.JPG" class="work_pics" style="max-height:300px;"></img>
               <h1>Software Engineering Intern</h1>
               <h2>Idemia NSS</h2>
@@ -233,7 +235,7 @@
               <p>Operated in a secure and confidential environment, ensuring the integrity of sensitive data for government clients. Developed software in a collaborative team setting, implementing SAFe 6.0 principles and practices, participating in code reviews and demos, and utilizing a variety of tools and programming languages.
               </p>
               </li>
-            <li class="work_item witem_2">
+            <li class="work_item witem_2" data-aos="fade-left" data-aos="200" data-aos="ease-in-sine">
               <img src="images/research.jpg" class="work_pics"></img>
               <h1>Undergraduate Research Student</h1>
               <h2>WVU Office of Undergraduate Research</h2>
@@ -242,7 +244,7 @@
               <p>Researching Architectural Technical Debt (ATD) alongside Professors Dzielski and Alshehri. Submitting a research paper to a conference, diving into the refactoring of ATD. Presented weekly presentations/summaries of my work to my professors through the 2 semester WVU Research Apprenticeship Program.
               </p>
             </li>
-            <li class="work_item witem_3">
+            <li class="work_item witem_3" data-aos="fade-right" data-aos="200" data-aos="ease-in-sine">
               <img src="images/bcclogo.jpg" class="work_pics" style="height:fit-content; max-width: 400px"></img>
               <h1>Maintenance Worker</h1>
               <h2>Bible Center</h2>
@@ -251,7 +253,7 @@
               <p>Collaborated with a dedicated maintenance team to ensure the preservation and cleanliness of both church and school facilities. Completed janitorial work full-time (vacuuming, waxing, mopping, etc.). Built, installed, and implemented new renovations for the buildings. Opened and closed multiple buildings, locked gates, and set alarms.
               </p>
             </li>   
-            <li class="work_item witem_4">
+            <li class="work_item witem_4" data-aos="fade-left" data-aos="200" data-aos="ease-in-sine">
               <img src="images/honorslogo.jpg" class="work_pics" style="height:fit-content; max-width: 400px"></img>
               <h1>Test-Blind Essay Reviewer</h1>
               <h2>WVU Honors College</h2>
@@ -260,7 +262,7 @@
               <p>Received 20 anonymous essays from the Honors College every month to evaluate. Accurately analyzed detailed essays from freshman applying to the Honors College. Reviewed essays for entry into the Honors College, assessing the writing quality, critical thinking skills, and overall academic potential of the applicants.
               </p>
             </li>
-            <li class="work_item witem_5">
+            <li class="work_item witem_5" data-aos="fade-right" data-aos="200" data-aos="ease-in-sine">
               <img src="images/bcclogo.jpg" class="work_pics" style="height:fit-content; max-width: 400px"></img>
               <h1>Maintenance Worker</h1>
               <h2>Bible Center</h2>
@@ -299,17 +301,13 @@
               <h1>May 2021 - Aug 2022</h1>
             </li>
           </ul>
-          
         </div>
     </div>
 
-    <script src="horizontalscroll.js"></script>
-
-    <!-- Organizations Section -->
+    <!-- ORGS Section -->
     <div class="organizations_container sticky_parent" id="involvement">
       <div class="sticky" id="sticky">
         <div class="scroll_section">
-
 
           <!-- CRU SECTION -->
           <ul class="cru orgall_item">
@@ -330,11 +328,9 @@
                   I began on the Event and Cru Teams, where I learned how to effectively plan and coordinate organization-wide events. 
                   I currently disciple 2 guys by discussing foundational Christian topics, analyzing the Word, and talking through struggles.</p></li>
               </ul>
-              
             </li>
             <li class="org_8 link_tab" style="place-self:center"><a href="https://sites.google.com/cru.org/wvucru/home?authuser=0" target="_blank"><h1>Our Website</h1></a></li>
           </ul>
-
 
           <!-- PSA SECTION -->
           <ul class="psa orgall_item">
@@ -357,11 +353,9 @@
                   current WVU students to help navigate work/life balance, study habits, organization engagement, and more.
                 </p></li>
               </ul>
-              
             </li>
             <li class="org_8 link_tab" style="place-self:center"><a href="https://ambassadors.wvu.edu/" target="_blank"><h1>Our Website</h1></a></li>
           </ul>
-
 
           <!-- VOLUNTEER SECTION -->
           <ul class="christian_help orgall_item">
@@ -383,7 +377,6 @@
                   I've helped with filling bags for the food pantry, taking in new donations, and guiding people through the career closet. 
                 </p></li>
               </ul>
-              
             </li>
             <li class="org_8 link_tab" style="place-self:center"><a href="https://motownchristianhelp.com/" target="_blank"><h1>Our Website</h1></a></li>
           </ul>
@@ -391,12 +384,11 @@
       </div>
     </div>
 
-
     <!-- Projects Section -->
     <div class="projects_container" id="projects">
         <h1 style="text-align:center; color:white; font-size:60px;"><b>Projects</b></h1>
         <ul class="project_list">
-            <li class="project_item pitem_1">
+            <li class="project_item pitem_1" data-aos="fade-up" data-aos-duration="200">
               <img src="images/bnana.png" class="project_pics"></img>
               <div class="project_text">
                 <h1>Unity Game BNANA</h1>
@@ -406,7 +398,7 @@
                 </p>
               </div>
             </li>
-            <li class="project_item pitem_3" id="website">
+            <li class="project_item pitem_3" id="website" data-aos="fade-up" data-aos-duration="200">
               <img src="images/personal_website.png" class="project_pics"></img>
               <div class="project_text">
                 <h1>Personal Website</h1>
@@ -416,17 +408,17 @@
                 </p>
               </div>
             </li>
-            <li class="project_item pitem_5" id="webapp">
+            <li class="project_item pitem_5" id="webapp" data-aos="fade-up" data-aos-duration="200">
               <img src="images/climate.png" class="project_pics"></img>
               <div class="project_text">
-                <h1>MoveTo Webapp</h1>
+                <h1>ForecastFella Webapp</h1>
                 <p>Currently developing a webapp with 6 partners to accurately provide weather, natural risks, and crime data of a 
                    location of their choice. The purpose is to provide information to users on the pros and cons
                   of travelling to the anticipated location. We are using HTML, CSS, JavaScript, React.js, and related APIs.
                 </p>
               </div>
             </li>
-            <li class="project_item pitem_2" id="tables">
+            <li class="project_item pitem_2" id="tables" data-aos="fade-up" data-aos-duration="200">
               <img src="images/table.png" class="project_pics"></img>
               <div class="project_text">
                 <h1>Efficient Java Tables</h1>
@@ -436,7 +428,7 @@
                 </p>
               </div>
             </li>
-            <li class="project_item pitem_4">
+            <li class="project_item pitem_4" data-aos="fade-up" data-aos-duration="200">
               <img src="images/operating_system.jpg" class="project_pics"></img>
               <div class="project_text">
                 <h1>Freestanding Operating System</h1>
@@ -447,13 +439,13 @@
                 </div>
             </li>
     </div>
+
+    <!-- Contact Me Section -->
     <div class="contacts_container" id="contact">
         <h1 style="text-align:center; color:white; font-size:50px;"><b>Contact Me</b></h1>
-        
         <div class="map_container" style="display: flex; justify-content: center; align-items: center;">
           <img src="images/pcb3.jpg" style="max-width: 50%; min-width: 280px; border-radius:10px; border:10px solid white; object-fit: cover;">
         </div>
-        
         <ul class="contact_list">
           <li class="contact_item">
             <i class="far fa-envelope-open"></i>
@@ -465,7 +457,7 @@
           </li>
           <ul class="socials">
             <li class="social_icon about_item">
-              <a href="https://www.instagram.com/@luke_graham42" target="blank"><i class="fa fa-instagram icon"></i></a>
+              <a href="https://www.instagram.com/luke_graham42" target="blank"><i class="fa fa-instagram icon"></i></a>
             </li>
             <li class="social_icon about_item">
               <a href="https://www.linkedin.com/in/lmg42/" target="blank"><i class="fa fa-linkedin icon"></i></a>

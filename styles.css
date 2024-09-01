@@ -161,7 +161,7 @@ p {
 .about_container {
     max-height: 8000px;
     max-width: 100%;
-    background-color: #708090;/*b3b3b3 rosybrown D2B48C <-taupe 8B7E66 708090*/
+    background-color: rgb(94, 134, 173);/*b3b3b3 rosybrown D2B48C <-taupe 8B7E66 708090*/
     clip-path: polygon(0 90px, 100% 0, 100% calc(100% - 90px), 0 100%);
     display: flex;
     justify-content: flex-start;
@@ -288,7 +288,7 @@ p {
     background-color: black;
 }   
 .resume_tab {
-    background-color: #1e9ba1;
+     background-color: rgb(103, 167, 151);  /*#1e9ba1*/
 }
 .resume_tab:hover {
     background-color: #156c71;
@@ -322,7 +322,7 @@ p {
 /* SKILLS SECTION */
 
 .skills_container {
-    background-color: #5b8585;
+    background-color: rgb(103, 167, 151); /* #5b8585*/
     max-width: 100%; /* Adjust width as needed */
     max-height: 4500px; /* Adjust height as needed */
     color: white;
@@ -479,7 +479,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #708090;
+    background-color: #797979;
     font-family: "Source Sans Pro";
     color: black;
 }
@@ -695,7 +695,7 @@ p {
 
 
 .cru {
-    background-color: #5b8585;
+    background-color: rgb(94, 134, 173);
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
     grid-template-columns: 30% 30% 30%;
@@ -706,7 +706,7 @@ p {
 
 }
 .psa {
-    background-color: rosybrown;
+    background-color: rgb(103, 167, 151);
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
     grid-template-columns: 30% 30% 30%;
@@ -717,7 +717,7 @@ p {
 
 }
 .christian_help {
-    background-color: #708090;
+    background-color: rosybrown;
     display: grid;
     grid-template-rows: 25% 25% 15% 10%;
     grid-template-columns: 30% 30% 30%;
@@ -808,7 +808,7 @@ p {
 
 .projects_container {
     max-height: 4000px;
-    background-color: #5b8585;
+    background-color: rgb(103, 167, 151);
     padding: 0 0 50px 0;
 }
 .project_list {
@@ -868,7 +868,7 @@ p {
     background-color: white;
     margin-top: 100px;
     max-height: 1000px;
-    background-color: #8c8c8c;
+    background-color: #797979;
 }
 .contact_list {
     display: flex;
@@ -912,7 +912,7 @@ p {
         padding: 10px 5px 10px 5px;
     }
     .navbar_name {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     .nav_item a {
         padding: 0;
@@ -982,7 +982,7 @@ p {
         display: flex;
     }
     .work_item p {
-        font-size: 15px;
+        font-size: 19px;
     }
     .witem_2 img {
         object-position: 0px -150px;
@@ -990,7 +990,7 @@ p {
 }
 @media screen and (min-width: 900px) {
     .dropdown {
-        display: flex;
+        display: flex !important;
     }
 }
 
@@ -1018,10 +1018,10 @@ p {
         display: none;
     }
     .navbar_container {
-        height: 60px;
-        justify-content: space-between;
-        background-color: #282828;
-        margin: 0;
+        height: 60px !important;
+        justify-content: space-between !important;
+        background-color: #282828 !important;
+        margin: 0 !important;
         width: 95.99%;
     }
     .nav_link, .nav_item {
@@ -1062,6 +1062,9 @@ p {
     .about_item p{
         font-size: 21px;
     }
+    .work_item p {
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 677px) { /* goes all the way to 320px */
     .more_skills_container {
@@ -1087,8 +1090,5 @@ p {
         height: 275px;
         padding: 0;
         margin: 0;
-    }
-    .frontpic {
-
     }
 }
