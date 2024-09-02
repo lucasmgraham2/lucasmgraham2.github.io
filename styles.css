@@ -1,5 +1,4 @@
-
-body{
+body {
     margin: 2%;
     padding: 0;
     height: 100%;
@@ -12,10 +11,8 @@ html {
 p {
     font-size: 25px;
 }
-
 .frontpic {
-    background-image:  
-        url('images/pcbpic.jpeg');
+    background-image: url('images/pcbpic.jpeg');
     background-blend-mode: overlay; 
     background-size: cover; 
     background-attachment: fixed;
@@ -43,13 +40,11 @@ p {
     padding-right: 80px;
     transition: padding-right 0.3s;
 }
-
 .nav_items {
     background-color: #282828;
     border-radius: 20px;
     padding: 15px 15px 15px 15px;
     justify-content: center;
-
 }
 .navbar_name {
     color: white;
@@ -68,7 +63,6 @@ p {
     font-weight: bold;
     padding: 20px 10px 20px 10px;
 }
-
 .navbar_container .nav_pic {
     position: absolute;
     top: -20px;
@@ -76,18 +70,14 @@ p {
     opacity: 0;
     text-decoration: none;
 }
-
 .navbar_container ul {
     display: flex;
-
     list-style-type: none;
     transition: all 0.3s ease-out;
 }
-
 .navbar_container .nav_item {
     position: relative;
 }
-
 .navbar_container .nav_item:hover .nav_link {
     opacity: 0;
     transition-delay: 0ms;
@@ -99,6 +89,7 @@ p {
 }
 .nav_link {
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .dropdown_btn {
     background-color: #282828;
@@ -310,13 +301,10 @@ p {
     align-items: center;
     padding: 0;
 }
-
-
 .skill_pics {
     max-width: 100%;
     max-height: 100px;
     background-color: white;
-
 }
 .skill_item span {
     display: flex;
@@ -337,13 +325,10 @@ p {
 .project_links {
     color: white;
     text-decoration: none;
-
 }
 .project_links:hover {
     color: #27c9d1;
 }
-
-
 .double_skill {
     height: 75px;
 }
@@ -365,7 +350,6 @@ p {
     text-align: center;
     margin: 0;
     padding: 0px 10px 30px 10px;
-    
 }
 .skill_item h1 {
     font-size: 40px;
@@ -376,7 +360,6 @@ p {
     margin: 0;
     padding: 5px;
 }
-
 .more_skills_list {
     display: flex;
     justify-content: center;
@@ -397,12 +380,10 @@ p {
     margin: 0 10px 0 10px;
     padding: 5px 5px 5px 5px;
     background-color: white;
-
     width: 120px;
     height: 120px;
     border: 5px solid black;
     border-radius: 50%;
-
 }
 .more_skills_container {
     display: flex;
@@ -476,12 +457,14 @@ p {
     grid-row: 1 / 6;
     grid-column: 3 / 4;
     border-right: solid 5px white;
+    height: 3050px;
 }
 .witem_7 {
     list-style-type: none;
     grid-row: 1 / 6;
     grid-column: 4 / 5;
     border-left: solid 5px white;
+    height: 3050px;
 }
 .wdate_1 {
     grid-row: 1 / 2;
@@ -586,11 +569,23 @@ p {
 
 
 /* ORGANIZATIONS SECTION */
-.organizations_container {
+.org_title{
+    width: 95.99vw;
+    height: 40px;
     margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: rgb(94, 134, 173);
+    padding: 20px 0 0 0;
+    border: none;
+}
+.organizations_container {
     background-color: white;
     margin-bottom: 150px;
-
 }
 .sticky_parent {
     height: 300vh;
@@ -611,7 +606,6 @@ p {
     justify-content: flex-start;
     align-items: center;
     transition: all 0.3s ease-in-out;
-
 }
 .orgall_item {
     margin-right: 4vw;
@@ -627,7 +621,6 @@ p {
     column-gap: 20px;
     justify-content: center;
     padding: 200px 0px 0px 0px;
-
 }
 .psa {
     background-color: rgb(103, 167, 151);
@@ -870,8 +863,7 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 0 70px 0;
-        margin-top: 150px;
+        padding: 150px 0 70px 0;
     }
     .work_item h3 {
         display: flex;

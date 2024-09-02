@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initial check when the page loads
     if (window.innerWidth > 900) {
         dropdown.style.display = 'flex';
     } else {
