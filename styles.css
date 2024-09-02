@@ -3,7 +3,7 @@ body{
     margin: 2%;
     padding: 0;
     height: 100%;
-    background-color: white; /* Fallback background color */
+    background-color: white;
 
 }
 html {
@@ -16,39 +16,26 @@ p {
 .frontpic {
     background-image:  
         url('images/pcbpic.jpeg');
-    background-blend-mode: overlay; /* Blend the gradient with the image */
-    background-size: cover; /* Ensure the image covers the container */
+    background-blend-mode: overlay; 
+    background-size: cover; 
     background-attachment: fixed;
-    max-width: 100%; /* Adjust width as needed */
-    min-height: 800px; /* Adjust height as needed */
+    max-width: 100%; 
+    min-height: 800px; 
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 710px);
     background-position: top;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*START NAVBAR*/
+/*NAVBAR SECTION*/
 .navbar_container {
     margin: 2%;
     color: white;
-    position: fixed; /*keeps the bar at the top of the page when scrolling*/
-    width: 95.99%; /* determines the size of the bar. stuck to top, and all of width*/
+    position: fixed; 
+    width: 95.99%; 
     top: 0;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
     z-index: 1;
     transition: margin 0.2s;
 }
@@ -123,12 +110,7 @@ p {
 }
 
 
-/*END NAVBAR*/
-
-/* TODO: Fix why "About" changes font size */
-
-
-
+/* LABELS SECTION */
 .labels {
     max-height: 150px;
     max-width: 100%;
@@ -151,23 +133,16 @@ p {
 }
 
 
-
-
-
-
-
-
 /*ABOUT ME SECTION*/
 .about_container {
     max-height: 8000px;
     max-width: 100%;
-    background-color: rgb(94, 134, 173);/*b3b3b3 rosybrown D2B48C <-taupe 8B7E66 708090*/
+    background-color: rgb(94, 134, 173);
     clip-path: polygon(0 90px, 100% 0, 100% calc(100% - 90px), 0 100%);
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     margin-bottom: 0px;
-    /* to make a consistent height from top of the container */
     padding-top: 70px;
 }
 .about_list {
@@ -192,9 +167,6 @@ p {
     border: 10px solid white;
 }
 .aitem_2 {
-    /* BACKGROUND COLOR
-    background-color: #282828;
-    border-radius: 20px; */
     padding:0;
     margin:0 15px 10px 20px;
     list-style-type: none;
@@ -251,7 +223,6 @@ p {
     font-size: 30px;
     color: white;
 }
-
 .link_tabs {
     display: flex;
     flex-wrap: wrap;
@@ -288,20 +259,14 @@ p {
     background-color: black;
 }   
 .resume_tab {
-     background-color: rgb(103, 167, 151);  /*#1e9ba1*/
+     background-color: rgb(103, 167, 151);
 }
 .resume_tab:hover {
     background-color: #156c71;
 }
 
-/*ABOUT ME END*/
 
-
-
-
-
-
-
+/* DIVIDER SECTION */
 .divider {
     height: 600px;
     background-color: white;
@@ -315,12 +280,7 @@ p {
 }
 
 
-
-
-
-
 /* SKILLS SECTION */
-
 .skills_container {
     background-color: rgb(103, 167, 151); /* #5b8585*/
     max-width: 100%; /* Adjust width as needed */
@@ -456,23 +416,7 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* WORK EXPERIENCE SECTION */
 .experience_container {
     margin: 0;
     padding: 0;
@@ -483,7 +427,6 @@ p {
     font-family: "Source Sans Pro";
     color: black;
 }
-
 .work_list {
     padding: 0;
     display:grid;
@@ -491,7 +434,6 @@ p {
     grid-template-columns: 5% 40% 5% 5% 40% 5%;
     row-gap: 200px;
 }
-
 .work_item {
     list-style-type: none;
     background-color: #282828;
@@ -561,7 +503,6 @@ p {
     grid-row: 5 / 6;
     grid-column: 5 / 6;
 }
-
 .work_item h2 {
     font-size: 30px;
     font-weight: bold;
@@ -591,8 +532,6 @@ p {
     margin: 0;
     color: white;
 }
-
-/*Work text items below*/
 .fa-solid {
     font-size: 30px;
     color: white;
@@ -605,7 +544,6 @@ p {
     padding: 0;
     list-style-type: none;
 }
-
 .wb1 {
     grid-row: 1 / 2;
     grid-column: 3 / 5;
@@ -647,19 +585,7 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* TODO: Finish explanations and reorder workplace and job title */
-
-
+/* ORGANIZATIONS SECTION */
 .organizations_container {
     margin-top: 150px;
     background-color: white;
@@ -692,8 +618,6 @@ p {
     width: 96vw;
     height: 100%;
 }
-
-
 .cru {
     background-color: rgb(94, 134, 173);
     display: grid;
@@ -726,8 +650,6 @@ p {
     justify-content: center;
     padding: 200px 0px 0px 0px;
 }
-
-/* PATTERNED STRUCTURE */
 .org_1, .org_2, .org_3, .org_4, .org_5, .org_6 {
     grid-row: span 1;
     grid-column: span 1;
@@ -735,16 +657,11 @@ p {
 .org_7, .org_8 {
     grid-row: span 1;
     grid-column: span 3;
-    /* IF WANT BACKGROUND COLOR
-    background-color: #282828;
-    border-radius: 30px; */
 }
-
 .org_item {
     max-width:100%;
     min-height:100px;
 }
-
 .text_item {
     display: flex;
     justify-content: center;
@@ -789,23 +706,9 @@ p {
     min-width: 90%;
     max-width: 900px;
 }
-/* TODO: maybe add buttons that go side to side through the orgs */
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* TODO: Edit actual projects and only list the best ones */
-
-
+/* PROJECTS SECTION */
 .projects_container {
     max-height: 4000px;
     background-color: rgb(103, 167, 151);
@@ -856,14 +759,7 @@ p {
 }
 
 
-
-
-
-
-
-
 /* CONTACT ME SECTION */
-
 .contacts_container {
     background-color: white;
     margin-top: 100px;
@@ -896,7 +792,6 @@ p {
     padding-right: 10px;
     font-size: 20px;
 }
-
 
 
 /* RESPONSIVE MEDIA QUERIES */
@@ -993,7 +888,6 @@ p {
         display: flex !important;
     }
 }
-
 @media screen and (max-width: 900px) {
     .dropdown_btn {
         display: flex;
@@ -1066,7 +960,7 @@ p {
         font-size: 15px;
     }
 }
-@media screen and (max-width: 677px) { /* goes all the way to 320px */
+@media screen and (max-width: 677px) {
     .more_skills_container {
         flex-direction: column;
     }
