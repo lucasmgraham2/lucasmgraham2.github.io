@@ -135,6 +135,7 @@ p {
     flex-direction: column;
     margin-bottom: 0px;
     padding-top: 70px;
+    z-index: 0;
 }
 .about_list {
     display: flex;
@@ -156,6 +157,7 @@ p {
     height: 350px;
     border-radius: 50%;
     border: 10px solid white;
+    z-index: 1;
 }
 .aitem_2 {
     padding:0;
