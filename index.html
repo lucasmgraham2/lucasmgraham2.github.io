@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Graham | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Logo2.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/d79ead22ec.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+<body>
+
+  <!-- Scripts -->
+  <script src="navscroll.js"></script>
+  <script src="navresponsive.js"></script>
+  <script src="horizontalscroll.js"></script>
+  <script src="linkscroll.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <!-- Navigation Bar Section -->
+    <div class="navbar_container">
+          <span class="spacing"><a class="navbar_name" href="#name"><b>Luke Graham</b></a></span>
+          <button class="dropdown_btn"><i class="fas fa-bars"></i></button>
+          <div class="dropdown">
+            <ul class="nav_items">
+              <li class="nav_item">
+                <a class="nav_link" href="#about">About</a>
+                <a class="nav_pic" href="#about"><i class="fas fa-user"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link scroll_trigger" href="#skills">Skills</a>
+                <a class="nav_pic scroll_trigger" href="#skills"><i class="fas fa-book-reader"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link scroll_trigger" href="#experience">Experience</a>
+                <a class="nav_pic scroll_trigger" href="#experience"><i class="fas fa-address-card"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link scroll_trigger" href="#involvement">Involvement</a>
+                <a class="nav_pic scroll_trigger" href="#involvement"><i class="fas fa-people-group"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link scroll_trigger" href="#projects">Projects</a>
+                <a class="nav_pic scroll_trigger" href="#projects"><i class="fa-solid fa-diagram-project fa-sm"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link scroll_trigger" href="#contact">Contact Me</a>
+                <a class="nav_pic scroll_trigger" href="#contact"><i class="fas fa-message"></i></a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="files/resume.pdf" target="blank">Resume</a>
+                <a class="nav_pic" href="files/resume.pdf" target="blank"><i class="fa fa-file-pdf-o"></i></a>
+              </li>
+            </ul>
+          </div>
+    </div>
+    <div class="frontpic" id="name"></div>
+
+    <!-- Company Logos -->
+    <div class="labels" id="about">
+        <ul class="label_list">
+            <li class="label_item"><a href="https://www.wvu.edu/" target="_blank"><img src="images/wvlogo.jpg" style="padding-top: 90px;"></a></li>
+            <li class="label_item"><a href="https://www.biblecenterchurch.com/" target="_blank"><img src="images/bcclogo.jpg" style="padding-top: 45px;"></a></li>
+            <li class="label_item"><a href="https://www.idemia-nss.com/" target="_blank"><img src="images/nsslogo.jpg" style="padding-top: 16px;"></a></li>
+            <li class="label_item"><a href="https://www.honors.wvu.edu/" target="_blank"><img src="images/honorsllclogo.png" style="padding-bottom: 10px;"></a></li>
+            <li class="label_item"><a href="https://sites.google.com/cru.org/wvucru/home?authuser=0" target="_blank"><img src="images/crulogo2.jpg" style="padding-bottom: 50px;"></a></li>
+        </ul>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about_container">
+        <ul class="about_list">
+          <li class="about_item aitem_1"> 
+            <img src="images/profpic.jpg" class="about_pic">
+            <ul class="socials">
+              <li class="social_icon about_item">
+                <a href="https://www.instagram.com/luke_graham42" target="blank"><i class="fa fa-instagram icon"></i></a>
+              </li>
+              <li class="social_icon about_item">
+                <a href="https://www.linkedin.com/in/lmg42/" target="blank"><i class="fa fa-linkedin icon"></i></a>
+              </li>
+              <li class="social_icon about_item">
+                <a href="https://github.com/lucasmgraham2" target="blank"><i class="fa fa-github icon"></i></a>
+              </li>
+            </ul>
+          </li>
+          <li class="about_item aitem_2">
+            <ul class="aitem_2">
+              <li><h1 style="margin-bottom:7px; color:white;"><b>Luke Graham</b></h1></li>
+              <li><p><b>B.S. Computer Science & B.S.B.A. Finance @ WVU '26</b></p></li>
+              <li><p>I'm a Junior and my passions are serving my community, learning new things, and exploring creative opportunities. </p></li>
+              <li><p>My interests include software design and development, technical debt, artificial intelligence, and machine learning.</p></li>
+              <li><p>West Virginia University Honors/Leadership</p></li>
+              <li style="margin-top: -10px;"><ul class="wvu_items">
+                <li><p>Foundation Scholar</p></li>
+                <li><p>Presidential Student Ambassador</p></li>
+                <li><p>Cru Ministry Leader</p></li>
+                <li><p>Certified Student Leader</p></li>
+              </ul></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Link Tabs -->
+        <h1 class="learn_more">Learn More About My: </h1>
+        <ul class="link_tabs" data-aos="fade-up">
+          <li class="link_tab"><a href="#skills" class="scroll_trigger"><h1>Skills</h1></a></li>
+          <li class="link_tab"><a href="#experience" class="scroll_trigger"><h1>Experience</h1></a></li>
+          <li class="link_tab"><a href="#involvement" class="scroll_trigger"><h1>Involvement</h1></a></li>
+          <li class="link_tab"><a href="#projects" class="scroll_trigger"><h1>Projects</h1></a></li>
+          <li class="link_tab"><a href="#contact" class="scroll_trigger"><h1>Contact</h1></a></li>
+          <li class="link_tab resume_tab"><a href="files/resume.pdf" target="blank"><h1><i class="fa fa-file-pdf-o fa-xs"></i> Resume</h1></a></li>
+        </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Skills Section -->
+    <div class="skills_container" id="skills">
+        <h1 style="display:flex; justify-content:center; color:white; font-size:40px;"><b>Technical Skills</b></h1>
+        <ul class="skills_list">
+            <li class="skill_item sitem_1" data-aos="zoom-in">
+              <span><img src="images/python.png" class="skill_pics"></span>
+              <div class="skill_text">
+                <h1>Python</h1>
+                <p>Proficient with experience in data analysis libraries like pandas and SciPy. Familiar with Anaconda
+                   Jupyter Notebook as an IDE for data visualization. Wish to dive into Tensorflow and machine learning
+                  in future projects.
+                </p>
+              </div>
+             </li>
+             <li class="skill_item sitem_2" data-aos="zoom-in">
+                <span><img src="images/java.png" class="skill_pics"></span>
+                <div class="skill_text">
+                  <h1>Java</h1>
+                  <p>5 years of programming in Java, with thorough knowledge of its data structures,
+                    sorting algorithms, and data manipulation. 
+                    Used in my <a href="#tables" class="project_links scroll_trigger_more"><b>Efficient Java Tables</b></a>.
+                  </p>  
+                </div>            
+            </li>
+            <li class="skill_item sitem_3" data-aos="zoom-in">
+                <span><img src="images/javascript.png" class="skill_pics double_skill"></span>
+                <div class="skill_text">
+                  <h1>JavaScript/TypeScript</h1>
+                  <p>Experience with front-end React.js
+                    and back-end Node.js. Used in my <a href="#webapp" class="project_links scroll_trigger_more"><b>ForecastFella Webapp</b></a>.
+                    Knowledge of type safety and code refactoring.</p>
+              </div> 
+            </li>
+            <li class="skill_item sitem_4" data-aos="zoom-in">
+              <span><img src="images/c.jpg" class="skill_pics"></span>
+              <div class="skill_text">
+               <h1>C</h1>
+               <p>Experience with procedural programming, pointers, memory allocation, structs, pipes, threads, etc. Take a class 
+                 soon to build a <a href="#os" class="project_links scroll_trigger_more"><b>Freestanding OS in C</b></a>.
+               </p>
+              </div> 
+            </li>
+            <li class="skill_item sitem_5" data-aos="zoom-in">
+              <span><img src="images/htmlcss.jpg" class="skill_pics double_skill"></span>
+              <div class="skill_text">
+                <h1>HTML/CSS</h1>
+                <p>Experience in web development, and multiple front-end projects. Used in this 
+                  <a href="#website" class="project_links scroll_trigger_more"><b>Personal Website</b></a> and the 
+                  <a href="#webapp" class="project_links scroll_trigger_more"><b>ForecastFella Webapp</b></a>. Knowledge
+                  of frameworks like Bootstrap and Tailwind CSS. 
+                </p>
+              </div> 
+            </li>
+             <li class="skill_item sitem_6" data-aos="zoom-in">
+                <span><img src="images/bash.jpg" class="skill_pics"></span>
+                <div class="skill_text">
+                  <h1>Linux</h1>
+                  <p>Experience writing Bash scripts and navigating the command-line interface.
+                  </p>
+              </div> 
+            </li>
+            <li class="skill_item sitem_7" data-aos="zoom-in">
+              <span><img src="images/git.jpg" class="skill_pics"></span>
+              <div class="skill_text">
+                <h1>Git</h1>
+                <p>Extensive experience with version control and use of GitHub, GitLab, and GitBash at work and at school.</p>
+              </div> 
+            </li>
+            <li class="skill_item sitem_8" data-aos="zoom-in">
+               <span><img src="images/csharp.png" class="skill_pics"></span>
+               <div class="skill_text">
+                <h1>C#</h1>
+                <p>Experienced with its OOP and creating sub scripts in Unity in my personal project 
+                  <a href="#projects" class="project_links scroll_trigger_more"><b>BNANA</b></a>.
+                </p>
+              </div> 
+           </li>
+           <li class="skill_item sitem_9" data-aos="zoom-in">
+               <span><img src="images/eggplant.png" class="skill_pics"></span>
+               <div class="skill_text">
+                <h1>Eggplant</h1>
+                <p>Experience in Eggplant Functional and its programming language SenseTalk. 
+                  Knowledge of writing automated testing scripts on remote servers.</p>
+              </div> 
+          </li>
+        </ul>
+        <div class="more_skills_container" data-aos="zoom-in">
+          <ul class="more_skills_list">
+            <li class="more_skill_item"><img src="images/rust.png"></li>
+            <li class="more_skill_item"><img src="images/lua.png"></li>
+          </ul>
+          <ul class="more_skills_list">
+            <li class="more_skill_item"><img src="images/pascal.png"></li>
+            <li class="more_skill_item"><img src="images/scheme.png" style="padding: 5px 0 0 5px;"></li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div class="experience_container" id="experience">
+        <h1 style="display:flex; justify-content:center; color:white; padding:0 0 50px 0; font-size:40px;"><b>Work Timeline</b></h1>
+        <div class="list_container">
+          <ul class="work_list">
+
+            <!--List items for each work experience-->
+            <li class="work_item witem_1" data-aos="fade-right" data-aos="200" data-aos="ease-in-sine">
+              <img src="images/idemia.JPG" class="work_pics" style="max-height:300px;"></img>
+              <h1>Software Engineering Intern</h1>
+              <h2>Idemia NSS</h2>
+              <h3>May 2024 - Aug 2024
+              </h3>
+              <p>Operated in a secure and confidential environment, ensuring the integrity of sensitive data for government clients. Developed software in a collaborative team setting, implementing SAFe 6.0 principles and practices, participating in code reviews and demos, and utilizing a variety of tools and programming languages.
+              </p>
+              </li>
+            <li class="work_item witem_2" data-aos="fade-left" data-aos="200" data-aos="ease-in-sine">
+              <img src="images/research.jpg" class="work_pics"></img>
+              <h1>Undergraduate Research Student</h1>
+              <h2>WVU Office of Undergraduate Research</h2>
+              <h3>Jan 2023 - Present
+              </h3>
+              <p>Researching Architectural Technical Debt (ATD) alongside Professors Dzielski and Alshehri. Submitting a research paper to a conference, diving into the refactoring of ATD. Presented weekly presentations/summaries of my work to my professors through the 2 semester WVU Research Apprenticeship Program.
+              </p>
+            </li>
+            <li class="work_item witem_3" data-aos="fade-right" data-aos="200" data-aos="ease-in-sine">
+              <img src="images/bcclogo.jpg" class="work_pics" style="height:fit-content; max-width: 400px"></img>
+              <h1>Maintenance Worker</h1>
+              <h2>Bible Center</h2>
+              <h3>May 2023 - Aug 2023
+              </h3>
+              <p>Collaborated with a dedicated maintenance team to ensure the preservation and cleanliness of both church and school facilities. Completed janitorial work full-time (vacuuming, waxing, mopping, etc.). Built, installed, and implemented new renovations for the buildings. Opened and closed multiple buildings, locked gates, and set alarms.
+              </p>
+            </li>   
+            <li class="work_item witem_4" data-aos="fade-left" data-aos="200" data-aos="ease-in-sine">
+              <img src="images/honorslogo.jpg" class="work_pics" style="height:fit-content; max-width: 400px"></img>
+              <h1>Test-Blind Essay Reviewer</h1>
+              <h2>WVU Honors College</h2>
+              <h3>Oct 2022 - May 2023
+              </h3>
+              <p>Received 20 anonymous essays from the Honors College every month to evaluate. Accurately analyzed detailed essays from freshman applying to the Honors College. Reviewed essays for entry into the Honors College, assessing the writing quality, critical thinking skills, and overall academic potential of the applicants.
+              </p>
+            </li>
+            <li class="work_item witem_5" data-aos="fade-right" data-aos="200" data-aos="ease-in-sine">
+              <img src="images/bcclogo.jpg" class="work_pics" style="height:fit-content; max-width: 400px"></img>
+              <h1>Maintenance Worker</h1>
+              <h2>Bible Center</h2>
+              <h3>May 2021 - Aug 2022
+              </h3>
+              <p>Worked with the same team, but worked part-time during the school year and full-time during the summers.
+              </p>
+            </li>
+
+            <!--White spacing for the middle line-->
+            <li class="witem_6"></li>
+            <li class="witem_7"></li>
+
+            <!--Bullet points for each one of the work experiences-->
+            <li class="wb1 bullet_container"><i class="fa-solid fa-circle"></i></li>
+            <li class="wb2 bullet_container"><i class="fa-solid fa-circle"></i></li>
+            <li class="wb3 bullet_container"><i class="fa-solid fa-circle"></i></li>
+            <li class="wb4 bullet_container"><i class="fa-solid fa-circle"></i></li>
+            <li class="wb5 bullet_container"><i class="fa-solid fa-circle"></i></li>
+
+            <!--List items for the dates of each work experience-->
+            <li class="wright wdate_1">
+              <h1>May 2024 - Aug 2024</h1>
+            </li>
+            <li class="wleft wdate_2">
+              <h1>Jan 2023 - Present</h1>
+            </li>
+            <li class="wright wdate_3">
+              <h1>May 2023 - Aug 2023</h1>
+            </li>
+            <li class="wleft wdate_4">
+              <h1>Oct 2022 - May 2023</h1>
+            </li>
+            <li class="wright wdate_5">
+              <h1>May 2021 - Aug 2022</h1>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- Organizations Section -->
+    <div class="org_title"><h1 style="display:flex; justify-content:center; color:white; font-size:45px;">Involvement</h1></div>
+    <div class="organizations_container sticky_parent" id="involvement">
+      <div class="sticky" id="sticky">
+        <div class="scroll_section">
+
+          <!-- Cru Section -->
+          <ul class="cru orgall_item">
+            <li class="org_item org_1 org_pic"><img src="images/worship.jpg" class="pic_item"></li>
+            <li class="org_item org_2" style="display:flex; justify-content:center; align-items:center;">
+              <img src="images/crulogo.jpg" class="org_logo" style="border-radius: 50%; object-fit:cover; max-height: 200px; box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.2);">
+            </li>
+            <li class="org_item org_3 org_pic"><img src="images/lifegroup.JPG" class="pic_item"></li>
+            <li class="org_item org_4 org_pic"><img src="images/lads.jpeg" class="pic_item" style="object-position:50% 35%;"></li>
+            <li class="org_item org_5 org_pic"><img src="images/footballgame.PNG" class="pic_item"></li>
+            <li class="org_item org_6 org_pic"><img src="images/sled.jpg" class="pic_item" style="object-position:center;"></li>
+            <li class="org_item org_7 text_item">
+              <ul class="org_text">
+                <li><h3 style="margin: 0px 0px 10px 0px;">
+                  WVU Cru
+                </h3></li>
+                <li><p>For the past two years, I've had the privilege of being a <b>Life Group Leader</b> for 10-15 students, planning events, fostering intentional community, and guiding healthy discussion in weekly Bible studies. 
+                  I began on the Event and Cru Teams, where I learned how to effectively plan and coordinate organization-wide events. 
+                  I currently disciple 2 guys by discussing foundational Christian topics, analyzing the Word, and talking through struggles.</p></li>
+              </ul>
+            </li>
+            <li class="org_8 link_tab" style="place-self:center"><a href="https://sites.google.com/cru.org/wvucru/home?authuser=0" target="_blank"><h1>Our Website</h1></a></li>
+          </ul>
+
+          <!-- PSA Section -->
+          <ul class="psa orgall_item">
+            <li class="org_item org_1 org_pic"><img src="images/Table 5C.jpeg .jpg" class="pic_item" style="object-position:top;"></li>
+            <li class="org_item org_2" style="display:flex; justify-content:center; align-items:center;">
+              <img src="images/psaformal.jpg" class="org_logo" style="border-radius: 50%; object-fit:cover; max-height: 200px; box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.2); border: 5px solid white">
+            </li>
+            <li class="org_item org_3 org_pic"><img src="images/mixer.JPG" class="pic_item" style="object-position:top;"></li>
+            <li class="org_item org_4 org_pic"><img src="images/captain.jpg" class="pic_item" style="object-position:top;"></li>
+            <li class="org_item org_5 org_pic"><img src="images/Group 1.jpg" class="pic_item"></li>
+            <li class="org_item org_6 org_pic"><img src="images/speaking.jpg" class="pic_item" style="object-position:top;"></li>
+            <li class="org_item org_7 text_item">
+              <ul class= "org_text">
+                <li><h3 style="margin: 0px 0px 10px 0px;">
+                  WVU Presidential Student Ambassadors
+                </h3></li>
+                <li><p>
+                  President Gee gathers us PSAs to discuss relavent student topics to help address the needs of the student body at annual PSA Summits. 
+                  Through this program, I earned a Certification in Student Leadership and have created many helpful videos for incoming freshman and 
+                  current WVU students to help navigate work/life balance, study habits, organization engagement, and more.
+                </p></li>
+              </ul>
+            </li>
+            <li class="org_8 link_tab" style="place-self:center"><a href="https://ambassadors.wvu.edu/" target="_blank"><h1>Our Website</h1></a></li>
+          </ul>
+
+          <!-- Volunteer Section -->
+          <ul class="christian_help orgall_item">
+            <li class="org_item org_1 org_pic"><img src="images/inside.jpg" class="pic_item" style="object-position:center;"></li>
+            <li class="org_item org_2" style="display:flex; justify-content:center; align-items:center;">
+              <img src="images/chlogo.jpg" class="org_logo" style="border-radius: 50%; object-fit:cover; max-height: 200px; box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.2);">
+            </li>
+            <li class="org_item org_3 org_pic"><img src="images/door.jpg" class="pic_item"></li>
+            <li class="org_item org_4 org_pic"><img src="images/foodpantry.jpg" class="pic_item" style="object-position:top;"></li>
+            <li class="org_item org_5 org_pic"><img src="images/donations.jpg" class="pic_item" style="object-position:top;"></li>
+            <li class="org_item org_6 org_pic"><img src="images/career.jpg" class="pic_item" style="object-position:center;"></li>
+            <li class="org_item org_7 text_item">
+              <ul class= "org_text">
+                <li><h3 style="margin: 0px 0px 10px 0px;">
+                  Christian Help
+                </h3></li>
+                <li><p>Two years ago, I became an active volunteer at a nonprofit called Christian Help. Christian Help focuses on
+                  providing for the homeless and jobless in downtown Morgantown by providing free food and clothes purely from donations. In my time volunteering, 
+                  I've helped with filling bags for the food pantry, taking in new donations, and guiding people through the career closet. 
+                </p></li>
+              </ul>
+            </li>
+            <li class="org_8 link_tab" style="place-self:center"><a href="https://motownchristianhelp.com/" target="_blank"><h1>Our Website</h1></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects_container" id="projects">
+        <h1 style="text-align:center; color:white; font-size:50px; padding:20px 0 0 0;"><b>Projects</b></h1>
+        <ul class="project_list">
+            <li class="project_item pitem_1" data-aos="fade-up" data-aos-duration="200">
+              <img src="images/bnana.png" class="project_pics"></img>
+              <div class="project_text">
+                <h1>Unity Game BNANA</h1>
+                <p>Completed a small 2D platformer game in Unity, with a focus on character movement, object animation, and level-based design. 
+                I used C# to write scripts for player movement, player life, animation, player state, etc. To challenge myself, I implemented increasing difficulty, 
+                sound effects, graphics, collectible bananas, and easter egg pineapples. 
+                </p>
+              </div>
+            </li>
+            <li class="project_item pitem_3" id="website" data-aos="fade-up" data-aos-duration="200">
+              <img src="images/personal_website.png" class="project_pics"></img>
+              <div class="project_text">
+                <h1>Personal Website</h1>
+                <p>Built this personal website to showcase my skills, experience, involvement and projects. I used HTML, CSS, and 
+                  JavaScript to create a unique professional design. Made it easily extensible with animations, grids, 
+                  event listeners, etc. For a responsive design, I used media queries so it can be displayed across all screen sizes and devices.
+                </p>
+              </div>
+            </li>
+            <li class="project_item pitem_5" id="webapp" data-aos="fade-up" data-aos-duration="200">
+              <img src="images/climate.png" class="project_pics"></img>
+              <div class="project_text">
+                <h1>ForecastFella Webapp</h1>
+                <p>Currently developing a webapp with 6 partners to accurately provide weather, natural risks, and crime data of a 
+                   location of their choice. The purpose is to provide information to users on the pros and cons
+                  of travelling to the anticipated location. We are using HTML, CSS, JavaScript, React.js, and related APIs.
+                </p>
+              </div>
+            </li>
+            <li class="project_item pitem_2" id="tables" data-aos="fade-up" data-aos-duration="200">
+              <img src="images/table.png" class="project_pics"></img>
+              <div class="project_text">
+                <h1>Efficient Java Tables</h1>
+                <p>Developed many efficient tables in Java, including a Hash, XML, JSON, Binary, CSV, Search, and Lookup table.
+                  To spice up their use, I added functionality to use Union, Intersect, and Difference operations on the tables.
+                  Used JUnit tests to check the efficiency and functionality of these tables through one of my classes at WVU.
+                </p>
+              </div>
+            </li>
+            <li class="project_item pitem_4" data-aos="fade-up" data-aos-duration="200">
+              <img src="images/operating_system.jpg" id="os" class="project_pics"></img>
+              <div class="project_text">
+                <h1>Freestanding Operating System</h1>
+                <p>COMING SOON... In Spring 2025, I will be taking a course where I will work in a group of 4 to develop an OS in C.
+                  We will be responsible for the bare bones, interrupts, memory management, multitasking, and process scheduling of the OS.
+                  Can't wait to see what we can build.
+                </p>
+                </div>
+            </li>
+    </div>
+
+    <!-- Contact Me Section -->
+    <div class="contacts_container" id="contact">
+        <h1 style="text-align:center; color:white; font-size:45px;"><b>Contact Me</b></h1>
+        <div class="map_container" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/pcb3.jpg" style="max-width: 50%; min-width: 280px; border-radius:10px; border:10px solid white; object-fit: cover;">
+        </div>
+        <ul class="contact_list">
+          <li class="contact_item">
+            <i class="far fa-envelope-open"></i>
+            <h1>lmg00019@mix.wvu.edu</h1>
+          </li>
+          <li class="contact_item">
+            <i class="fas fa-phone"></i>
+            <h1>304-205-2331</h1>
+          </li>
+          <ul class="socials">
+            <li class="social_icon about_item">
+              <a href="https://www.instagram.com/luke_graham42" target="blank"><i class="fa fa-instagram icon"></i></a>
+            </li>
+            <li class="social_icon about_item">
+              <a href="https://www.linkedin.com/in/lmg42/" target="blank"><i class="fa fa-linkedin icon"></i></a>
+            </li>
+            <li class="social_icon about_item">
+              <a href="https://github.com/lucasmgraham2" target="blank"><i class="fa fa-github icon"></i></a>
+            </li>
+          </ul>
+      </ul>
+    </div>
+</body>
+</html>
