@@ -3,7 +3,7 @@ body {
     padding: 0;
     height: 100%;
     background-color: white;
-
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -20,6 +20,9 @@ p {
     min-height: 800px; 
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 710px);
     background-position: top;
+}
+.frontprofile {
+    display: none;
 }
 
 
@@ -292,6 +295,7 @@ p {
     padding: 0;
     padding-top: 30px;
     border-radius: 20px;
+    max-width: 300px;
 }
 .skills_list {
     display: grid;
@@ -934,11 +938,6 @@ p {
         max-width: 600px;
         min-width: 90%;
     }
-}
-@media screen and (max-width: 775px) {
-    .witem_2 img {
-        object-position: 50%;
-    }
     .label_item img{
         height: 40px;
         margin: 0;
@@ -946,6 +945,31 @@ p {
     }
     .label_list {
         margin-top: -160px;
+    }
+    .frontpic {
+        background-color: #797979;
+        background-image: none;
+    }
+    .divider {
+        height: 0;
+    }
+    .about_container {
+        clip-path: polygon(0 90px, 100% 0, 100% 100%, 0 100%);
+    }
+    .link_tabs {
+        padding-bottom: 25px;
+    }
+    .frontprofile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 775px) {
+    .witem_2 img {
+        object-position: 50%;
     }
     .about_item p{
         font-size: 21px;
