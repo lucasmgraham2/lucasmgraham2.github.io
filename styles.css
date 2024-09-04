@@ -4,9 +4,11 @@ body {
     height: 100%;
     background-color: white;
     overflow-x: hidden;
+    position: relative;
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 p {
     font-size: 25px;
@@ -327,6 +329,7 @@ p {
 .skill_text {
     background-color: #282828;
     border-radius: 20px;
+    max-width: 300px;
 }
 .project_links {
     color: white;
@@ -785,7 +788,7 @@ p {
 .contact_item h1 {
     padding: 0;
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 .contact_item i {
     padding-right: 10px;
@@ -964,7 +967,7 @@ p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 100px;
+        padding-top: 180px;
     }
 }
 @media screen and (max-width: 775px) {
