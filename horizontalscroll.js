@@ -1,5 +1,3 @@
-// Purpose: To create a horizontal scroll effect for the Activities Section
-
 window.addEventListener('scroll', (e) => {
     transform(document.querySelector('.sticky'))
 })
@@ -10,10 +8,6 @@ function transform(section) {
     // Scrolls according to the pixels and not sections
     let percentage = ((window.scrollY - offsetTop) / window.innerHeight)* 100;
     percentage = percentage < 0 ? 0 : percentage > 131 ? 131 : percentage;
-
-    // percentage*=2;
-    // console.log(percentage)
-    // console.log(window.scrollY)
     
     // Scrolls according to the sections based on individual pixel percentage location
     if (percentage < 130 && percentage > 70) {
