@@ -1,6 +1,5 @@
-# My Resume Portfolio
-Hey👋 
-Welcome to my resume portfolio website! This site is hosted with GitHub Pages and serves as a showcase of my skills, experience, and professional background. Below is an overview of the sections included in the website.
+# Resume Portfolio - Last Updated 9/7/24
+This site is hosted with GitHub Pages and serves as a showcase of my skills, experience, and professional background. Below is an overview of the sections included in the website.
 
 ## About
 The **About** section provides a brief introduction to who I am, my professional background, and what drives me. It highlights some of my honors and what I am passionate about.
