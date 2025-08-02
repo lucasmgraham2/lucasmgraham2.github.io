@@ -1,7 +1,7 @@
 # Luke Graham - Portfolio Website
 
 Hey👋 
-Welcome to my personal portfolio website! This is a React-based portfolio showcasing my skills, experience, and professional background. The website has a responsive design, smooth animations, and an interactive contact form as well.
+Welcome to my personal portfolio website! This is a React-based portfolio showcasing my skills, experience, and professional background. The website has a responsive design, smooth animations, and an interactive contact form as well. This site is hosted with GitHub Pages.
 
 ## 🚀 Tech Stack
 - **React** with TypeScript
