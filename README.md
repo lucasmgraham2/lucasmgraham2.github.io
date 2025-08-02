@@ -1,21 +1,72 @@
-# My Resume Portfolio
+# Luke Graham - Portfolio Website
+
 Hey👋 
-Welcome to my resume portfolio website! This site is hosted with GitHub Pages and serves as a showcase of my skills, experience, and professional background. Below is an overview of the sections included in the website.
+Welcome to my personal portfolio website! This is a React-based portfolio showcasing my skills, experience, and professional background. The website has a responsive design, smooth animations, and an interactive contact form as well.
 
-## About
-The **About** section provides a brief introduction to who I am, my professional background, and what drives me. It highlights some of my honors and what I am passionate about.
+## 🚀 Tech Stack
+- **React** with TypeScript
+- **Bootstrap 5** for responsive design
+- **AOS (Animate On Scroll)** for animations
+- **EmailJS** for contact form functionality
+- **Font Awesome** for icons
 
-## Skills
-In the **Skills** section, you will find a detailed list of my technical skills. This includes programming languages, tools, frameworks, and other relevant proficiencies that I have acquired over the years.
+## 📱 Features
+- Fully responsive design that works on all devices
+- Smooth scrolling navigation
+- Interactive contact form with email integration
+- Professional project showcase with categorized badges
+- Skills section with programming languages and tools
+- Leadership & involvement showcase
+- Downloadable resume
 
-## Experience
-The **Experience** section outlines my professional work history. It includes details of the roles I've held, the organizations I've worked with, and the key responsibilities and accomplishments in each position.
+## 🔧 Getting Started
 
-## Involvement
-In the **Involvement** section, I showcase my participation in various extracurricular activities, volunteer work, and any community or professional groups that I am part of. This section highlights my contributions outside of the workplace.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-## Contact Me
-The **Contact Me** section provides a way for visitors to reach out to me. It includes my email address, and social media links for communication.
+### Installation
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-## Resume
-The **Resume** page offers a downloadable version of my resume. You can view or download it directly from the site for another look at my qualifications and experience.
+### Building for Production
+```bash
+npm run build
+```
+
+## 📂 Project Structure
+- **src/components/** - React components for each section
+- **src/App.tsx** - Main application component
+- **public/images/** - Image assets
+- **public/files/** - Downloadable files (resume)
+
+## 📧 Contact Form
+The contact form uses EmailJS for secure email delivery. Environment variables are used to store sensitive configuration data.
+
+## 🎨 Sections
+
+### About
+Introduction to who I am, my background, and professional interests including honors and achievements.
+
+### Skills  
+Comprehensive showcase of technical skills organized into Programming Languages and Software & Tools categories.
+
+### Experience
+Professional work history with detailed descriptions of roles, responsibilities, and accomplishments.
+
+### Projects
+Featured technical projects with live demos, source code links, and detailed descriptions.
+
+### Leadership & Involvement
+Extracurricular activities, volunteer work, and community involvement showcasing leadership experience.
+
+### Contact
+Interactive contact form with social media links and direct communication options.
