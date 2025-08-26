@@ -74,11 +74,11 @@ const About: React.FC = () => {
         {/* About Content */}
         <Row className="align-items-center mb-5">
           <Col lg={5} className="mb-4 mb-lg-0">
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" className="text-center">
               <img 
                 src="/images/profpic.JPG" 
                 alt="Luke Graham Professional"
-                className="img-fluid rounded-3 shadow-lg"
+                className="img-fluid rounded-3 shadow-lg mx-auto d-block"
                 style={{ width: '100%', maxWidth: '400px' }}
               />
               
@@ -89,7 +89,7 @@ const About: React.FC = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center transition-all"
-                  style={{ width: '50px', height: '50px' }}
+                  style={{ width: '60px', height: '60px', fontSize: '1.5rem' }}
                 >
                   <i className="fab fa-instagram"></i>
                 </a>
@@ -98,7 +98,7 @@ const About: React.FC = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center transition-all"
-                  style={{ width: '50px', height: '50px' }}
+                  style={{ width: '60px', height: '60px', fontSize: '1.5rem' }}
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
@@ -107,7 +107,7 @@ const About: React.FC = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center transition-all"
-                  style={{ width: '50px', height: '50px' }}
+                  style={{ width: '60px', height: '60px', fontSize: '1.5rem' }}
                 >
                   <i className="fab fa-github"></i>
                 </a>
@@ -160,10 +160,10 @@ const About: React.FC = () => {
                 <Button
                   variant="primary"
                   className="btn-modern btn-primary-modern rounded-pill px-4 py-2"
-                  href="/files/CS_Resume_Aug_2025.pdf"
+                  href="/files/Luke_Graham_Aug_2025.pdf"
                   target="_blank"
                 >
-                  <i className="fa fa-file-pdf me-2"></i>Resume
+                  <i className="fa fa-file-pdf me-2" style={{ fontSize: '1.1rem' }}></i>Resume
                 </Button>
               </div>
             </div>

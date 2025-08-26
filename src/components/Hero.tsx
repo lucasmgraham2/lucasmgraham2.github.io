@@ -21,16 +21,18 @@ const Hero: React.FC = () => {
       <Container className="text-center text-white">
         <Row className="justify-content-center">
           <Col lg={10}>
-            <div data-aos="fade-up" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-duration="1000" style={{ paddingTop: '20px' }}>
               <img 
-                src="/images/picofme.JPG" 
+                src="/images/suitpic.jpg" 
                 alt="Luke Graham"
                 className="rounded-circle mb-4 shadow-lg float-animation"
                 style={{
                   width: '250px',
                   height: '250px',
                   objectFit: 'cover',
-                  border: '5px solid rgba(255, 255, 255, 0.3)'
+                  border: '5px solid rgba(255, 255, 255, 0.3)',
+                  zIndex: 1080,
+                  position: 'relative'
                 }}
               />
             </div>
@@ -79,25 +81,6 @@ const Hero: React.FC = () => {
             </div>
           </Col>
         </Row>
-        
-        {/* Scroll Down Indicator */}
-        <div 
-          className="position-absolute start-50 translate-middle-x"
-          style={{ bottom: '20px' }}
-          data-aos="fade-up" 
-          data-aos-delay="1000"
-        >
-          <div 
-            className="d-flex flex-column align-items-center cursor-pointer bounce-animation"
-            onClick={() => scrollToSection('about')}
-            style={{ cursor: 'pointer' }}
-          >
-            <span className="mb-2 small text-light">Scroll Down</span>
-            <div>
-              <i className="fas fa-chevron-down fa-lg opacity-75 text-light"></i>
-            </div>
-          </div>
-        </div>
       </Container>
     </section>
   );
