@@ -140,7 +140,7 @@ const Navigation: React.FC = () => {
               Contact
             </Nav.Link>
             <Nav.Link 
-              href="/files/Luke_Graham_Aug_2025.pdf" 
+              href="/files/resume.pdf" 
               target="_blank"
               className="mx-2 fw-semibold"
               style={{ 

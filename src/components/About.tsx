@@ -160,7 +160,7 @@ const About: React.FC = () => {
                 <Button
                   variant="primary"
                   className="btn-modern btn-primary-modern rounded-pill px-4 py-2"
-                  href="/files/Luke_Graham_Aug_2025.pdf"
+                  href="/files/resume.pdf"
                   target="_blank"
                 >
                   <i className="fa fa-file-pdf me-2" style={{ fontSize: '1.1rem' }}></i>Resume

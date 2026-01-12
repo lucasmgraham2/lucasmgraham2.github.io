@@ -199,7 +199,7 @@ const Contact: React.FC = () => {
                 <Button
                   variant="primary"
                   size="lg"
-                  href="/files/Luke_Graham_Aug_2025.pdf"
+                  href="/files/resume.pdf"
                   target="_blank"
                   className="btn-modern btn-primary-modern rounded-pill w-100"
                 >

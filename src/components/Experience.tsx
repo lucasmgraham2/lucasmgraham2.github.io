@@ -119,7 +119,7 @@ const Experience: React.FC = () => {
             <div className="experience-timeline">
               {experiences.map((experience, index) => (
                 <div key={index} className="mb-5">
-                  <div data-aos="fade-up" data-aos-delay={index * 200}>
+                  <div data-aos="fade-up" data-aos-delay={index * 50}>
                     <Card className="experience-card modern-card border-0 shadow">
                       <Card.Body className="p-4">
                         <div className="d-flex align-items-start mb-3">

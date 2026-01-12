@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
       <Container className="text-center text-white">
         <Row className="justify-content-center">
           <Col lg={10}>
-            <div data-aos="fade-up" data-aos-duration="1000" style={{ paddingTop: '20px' }}>
+            <div data-aos="fade-up" data-aos-duration="500" style={{ paddingTop: '20px' }}>
               <img 
                 src="/images/suitpic.jpg" 
                 alt="Luke Graham"
@@ -37,25 +37,25 @@ const Hero: React.FC = () => {
               />
             </div>
             
-            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
               <h1 className="display-3 fw-bold mb-4 text-shadow">
                 Hi, I'm <span className="text-warning">Luke</span>
               </h1>
             </div>
             
-            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
               <h2 className="h4 mb-4 text-light">
                 Computer Science & Finance Student at WVU '26
               </h2>
             </div>
             
-            <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
               <p className="lead mb-5 text-light opacity-90">
                 Passionate about software development, AI/ML, and serving my community
               </p>
             </div>
             
-            <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
               <Button 
                 size="lg"
                 className="btn-modern me-3 mb-3"

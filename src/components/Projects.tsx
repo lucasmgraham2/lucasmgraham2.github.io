@@ -145,7 +145,7 @@ const Projects: React.FC = () => {
         <Row className="g-4 mb-5">
           {projects.map((project, index) => (
             <Col key={index} lg={4} md={6}>
-              <div data-aos="fade-up" data-aos-delay={index * 100}>
+              <div data-aos="fade-up" data-aos-delay={index * 50}>
                 <Card className="project-card modern-card h-100 border-0 shadow">
                   <div className="position-relative">
                     <Card.Img 

@@ -17,7 +17,7 @@ import Contact from './components/Contact';
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       once: true,
       offset: 100,
     });

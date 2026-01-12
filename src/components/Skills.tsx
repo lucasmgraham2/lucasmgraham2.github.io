@@ -81,7 +81,7 @@ const Skills: React.FC = () => {
         <Row className="g-4 mb-5">
           {programmingLanguages.map((skill, skillIndex) => (
             <Col key={skillIndex} xs={6} sm={4} md={3} lg={2}>
-              <div data-aos="fade-up" data-aos-delay={skillIndex * 100}>
+              <div data-aos="fade-up" data-aos-delay={skillIndex * 50}>
                 <Card className="skill-card h-100 border-0 shadow-sm modern-card">
                   <Card.Body className="d-flex flex-column align-items-center text-center p-3">
                     <div className="skill-image-container mb-3">
@@ -121,7 +121,7 @@ const Skills: React.FC = () => {
         <Row className="g-4 mb-5">
           {softwareTools.map((skill, skillIndex) => (
             <Col key={skillIndex} xs={6} sm={4} md={3} lg={2}>
-              <div data-aos="fade-up" data-aos-delay={skillIndex * 100}>
+              <div data-aos="fade-up" data-aos-delay={skillIndex * 50}>
                 <Card className="skill-card h-100 border-0 shadow-sm modern-card">
                   <Card.Body className="d-flex flex-column align-items-center text-center p-3">
                     <div className="skill-image-container mb-3">
